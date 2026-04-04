@@ -1,0 +1,7142 @@
+{
+  "year": 2018,
+  "session": "JULY",
+  "title": "NPTEL IoT 2018 JULY",
+  "questions": [
+    {
+      "id": "2018-JULY-W0-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Internet of Things (IoT) can be integrated with which of these separate domains:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Cloud-based storage and computing."
+        },
+        {
+          "key": "b",
+          "text": "Cyber Physical Systems."
+        },
+        {
+          "key": "c",
+          "text": "Big-data networks."
+        },
+        {
+          "key": "d",
+          "text": "All of these."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these."
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q1",
+      "uid": "2018-JULY-W0-Q1",
+      "display_no": "W00-Q01",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these.",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 1,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "In the current market scenario, IoT captures the maximum share in which one of these?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Industry"
+        },
+        {
+          "key": "b",
+          "text": "Security"
+        },
+        {
+          "key": "c",
+          "text": "Healthcare"
+        },
+        {
+          "key": "d",
+          "text": "Home automation"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Industry"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q2",
+      "uid": "2018-JULY-W0-Q2",
+      "display_no": "W00-Q02",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Industry",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 2,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 0 | Q3",
+      "uid": "2018-JULY-W0-Q3",
+      "display_no": "W00-Q03",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 3,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "The main function of the IoT Gateway can be summarized as:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Forwarding packets between LAN and WAN on the IP layer."
+        },
+        {
+          "key": "b",
+          "text": "Performs application layer functions between IoT nodes and other entities."
+        },
+        {
+          "key": "c",
+          "text": "Enables local, short-range communication between IoT devices."
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Forwarding packets between LAN and WAN on the IP layer."
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q4",
+      "uid": "2018-JULY-W0-Q4",
+      "display_no": "W00-Q04",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Forwarding packets between LAN and WAN on the IP layer.",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 4,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "MANETs are:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Infrastructure oriented"
+        },
+        {
+          "key": "b",
+          "text": "Infrastructure less"
+        },
+        {
+          "key": "c",
+          "text": "Partially infrastructure oriented"
+        },
+        {
+          "key": "d",
+          "text": "Partially infrastructure less"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Infrastructure less"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q5",
+      "uid": "2018-JULY-W0-Q5",
+      "display_no": "W00-Q05",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Infrastructure less",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 5,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "The approximation of the measured property sensed by a digital sensor induces:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Quantization error"
+        },
+        {
+          "key": "b",
+          "text": "Hysteresis error"
+        },
+        {
+          "key": "c",
+          "text": "Aliasing error"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Quantization error"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q6",
+      "uid": "2018-JULY-W0-Q6",
+      "display_no": "W00-Q06",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Quantization error",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 6,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "Nested loop in Arduino is:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Loops in the same function"
+        },
+        {
+          "key": "b",
+          "text": "Loop inside a Loop"
+        },
+        {
+          "key": "c",
+          "text": "Infinite loop"
+        },
+        {
+          "key": "d",
+          "text": "Not supported"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Loop inside a Loop"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q7",
+      "uid": "2018-JULY-W0-Q7",
+      "display_no": "W00-Q07",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Loop inside a Loop",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 7,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "A DC motor is a type of:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Pneumatic actuators"
+        },
+        {
+          "key": "b",
+          "text": "Hydraulic actuators"
+        },
+        {
+          "key": "c",
+          "text": "Electrical actuators"
+        },
+        {
+          "key": "d",
+          "text": "Mechanical actuator"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Electrical actuators"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q8",
+      "uid": "2018-JULY-W0-Q8",
+      "display_no": "W00-Q08",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Electrical actuators",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 8,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "In SDN-based sensor network, one can manage:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Sensor nodes"
+        },
+        {
+          "key": "b",
+          "text": "Sensing delay"
+        },
+        {
+          "key": "c",
+          "text": "Network connectivity"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q9",
+      "uid": "2018-JULY-W0-Q9",
+      "display_no": "W00-Q09",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 9,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W0-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 0,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "Which of these is NOT related to IoT scalability?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Flexibility within Internet."
+        },
+        {
+          "key": "b",
+          "text": "Large scale deployment."
+        },
+        {
+          "key": "c",
+          "text": "Real-time connectivity of billions of devices."
+        },
+        {
+          "key": "d",
+          "text": "Range of each sensor node."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "Range of each sensor node."
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 0 | Q10",
+      "uid": "2018-JULY-W0-Q10",
+      "display_no": "W00-Q10",
+      "week_label": "Week 0",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Range of each sensor node.",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-0",
+        "year-2018"
+      ],
+      "sort_index": 10,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Internet of Things (IoT) can be integrated with which of these separate domains:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Cloud-based storage and computing."
+        },
+        {
+          "key": "b",
+          "text": "Cyber Physical Systems."
+        },
+        {
+          "key": "c",
+          "text": "Big-data networks."
+        },
+        {
+          "key": "d",
+          "text": "All of these."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these."
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q1",
+      "uid": "2018-JULY-W1-Q1",
+      "display_no": "W01-Q01",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these.",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 11,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "Which of the following is true?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "IoT is a subset of M2M"
+        },
+        {
+          "key": "b",
+          "text": "M2M is a subset of IoT"
+        },
+        {
+          "key": "c",
+          "text": "IoT is a subset of CPS"
+        },
+        {
+          "key": "d",
+          "text": "CPS is a subset of Web of Things (WoT)"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "M2M is a subset of IoT"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q2",
+      "uid": "2018-JULY-W1-Q2",
+      "display_no": "W01-Q02",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "M2M is a subset of IoT",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 12,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 1 | Q3",
+      "uid": "2018-JULY-W1-Q3",
+      "display_no": "W01-Q03",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 13,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "Which one of these is the first technology in the chronological order of the evolution of IoT?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "ATM"
+        },
+        {
+          "key": "b",
+          "text": "Web"
+        },
+        {
+          "key": "c",
+          "text": "Smart City"
+        },
+        {
+          "key": "d",
+          "text": "Smart healthcare"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "ATM"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q4",
+      "uid": "2018-JULY-W1-Q4",
+      "display_no": "W01-Q04",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "ATM",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 14,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "The protocol IKEv2 stands for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Information Key Exchange version 2"
+        },
+        {
+          "key": "b",
+          "text": "Internet Key Exchange version 2"
+        },
+        {
+          "key": "c",
+          "text": "Internet Key Exclusion version 2"
+        },
+        {
+          "key": "d",
+          "text": "Inter-Key Exclusion version 2"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Internet Key Exchange version 2"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q5",
+      "uid": "2018-JULY-W1-Q5",
+      "display_no": "W01-Q05",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Internet Key Exchange version 2",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 15,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "The phenomenon of the output signal slowly changing, independent of the measured property is called:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Aliasing"
+        },
+        {
+          "key": "b",
+          "text": "Drift"
+        },
+        {
+          "key": "c",
+          "text": "Hysteresis"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Drift"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q6",
+      "uid": "2018-JULY-W1-Q6",
+      "display_no": "W01-Q06",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Drift",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 16,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "Which of these statements regarding sensors is TRUE?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Sensors are input devices."
+        },
+        {
+          "key": "b",
+          "text": "Sensors can be analog as well as digital"
+        },
+        {
+          "key": "c",
+          "text": "Sensors respond to some external stimuli."
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q7",
+      "uid": "2018-JULY-W1-Q7",
+      "display_no": "W01-Q07",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 17,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "Light activated polymers (LAPs) are a special type of:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Light dependent resistors"
+        },
+        {
+          "key": "b",
+          "text": "Shape memory polymers"
+        },
+        {
+          "key": "c",
+          "text": "Solar cells"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Shape memory polymers"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q8",
+      "uid": "2018-JULY-W1-Q8",
+      "display_no": "W01-Q08",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Shape memory polymers",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 18,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Which of these is a part of the Sensing Layer of the IoT Service Oriented Architecture?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Service integration"
+        },
+        {
+          "key": "b",
+          "text": "Service repository"
+        },
+        {
+          "key": "c",
+          "text": "Business logic"
+        },
+        {
+          "key": "d",
+          "text": "Data sensing and actuation protocols."
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "Data sensing and actuation protocols."
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q9",
+      "uid": "2018-JULY-W1-Q9",
+      "display_no": "W01-Q09",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Data sensing and actuation protocols.",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 19,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W1-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 1,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "A DC motor is a type of:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Pneumatic actuators"
+        },
+        {
+          "key": "b",
+          "text": "Hydraulic actuators"
+        },
+        {
+          "key": "c",
+          "text": "Electrical actuators"
+        },
+        {
+          "key": "d",
+          "text": "Mechanical actuator"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Electrical actuators"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 1 | Q10",
+      "uid": "2018-JULY-W1-Q10",
+      "display_no": "W01-Q10",
+      "week_label": "Week 1",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Electrical actuators",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-1",
+        "year-2018"
+      ],
+      "sort_index": 20,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Which of the following controls the publish-subscribe messaging pattern in MQTT.",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "MQTT broker"
+        },
+        {
+          "key": "b",
+          "text": "MQTT client"
+        },
+        {
+          "key": "c",
+          "text": "MQTT server"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "MQTT broker"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q1",
+      "uid": "2018-JULY-W2-Q1",
+      "display_no": "W02-Q01",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "MQTT broker",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 21,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "AMQP is designed for connecting:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Constrained networks"
+        },
+        {
+          "key": "b",
+          "text": "LANs and WANs"
+        },
+        {
+          "key": "c",
+          "text": "Systems and Business processes"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Systems and Business processes"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q2",
+      "uid": "2018-JULY-W2-Q2",
+      "display_no": "W02-Q02",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Systems and Business processes",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 22,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 2 | Q3",
+      "uid": "2018-JULY-W2-Q3",
+      "display_no": "W02-Q03",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 23,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "REST stands for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Representational State Transfer"
+        },
+        {
+          "key": "b",
+          "text": "Resourceful Sensor Transfer"
+        },
+        {
+          "key": "c",
+          "text": "Resourceful State Transport"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Representational State Transfer"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q4",
+      "uid": "2018-JULY-W2-Q4",
+      "display_no": "W02-Q04",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Representational State Transfer",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 24,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "Which of these is TRUE for XMPP?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "It is decentralized"
+        },
+        {
+          "key": "b",
+          "text": "It supports interoperability"
+        },
+        {
+          "key": "c",
+          "text": "It does not guarantee QoS"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q5",
+      "uid": "2018-JULY-W2-Q5",
+      "display_no": "W02-Q05",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 25,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Which of these is a routing protocol for low-power lossy networks over IPv6?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "RPL"
+        },
+        {
+          "key": "b",
+          "text": "OSPF"
+        },
+        {
+          "key": "c",
+          "text": "Both a and b"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "RPL"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q6",
+      "uid": "2018-JULY-W2-Q6",
+      "display_no": "W02-Q06",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "RPL",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 26,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "In AMQP, link initiation in order to send and receive messages is done by which frame type?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "OPEN"
+        },
+        {
+          "key": "b",
+          "text": "ATTACH"
+        },
+        {
+          "key": "c",
+          "text": "BEGIN"
+        },
+        {
+          "key": "d",
+          "text": "FLOW"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "ATTACH"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q7",
+      "uid": "2018-JULY-W2-Q7",
+      "display_no": "W02-Q07",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "ATTACH",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 27,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "RPL supports:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Message confidentiality"
+        },
+        {
+          "key": "b",
+          "text": "Loop detection in the routes"
+        },
+        {
+          "key": "c",
+          "text": "Data path validation"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q8",
+      "uid": "2018-JULY-W2-Q8",
+      "display_no": "W02-Q08",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 28,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Which statement is TRUE with respect to the IEEE 802.15.4 standard?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "It is a low data-rate standard."
+        },
+        {
+          "key": "b",
+          "text": "Used for architecting wireless PANs"
+        },
+        {
+          "key": "c",
+          "text": "Uses only two layers – PHY and MAC"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q9",
+      "uid": "2018-JULY-W2-Q9",
+      "display_no": "W02-Q09",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 29,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W2-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 2,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "In the network layer, Zigbee follows which routing scheme?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "AODV"
+        },
+        {
+          "key": "b",
+          "text": "DSDV"
+        },
+        {
+          "key": "c",
+          "text": "RIPv2"
+        },
+        {
+          "key": "d",
+          "text": "OSPF"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "AODV"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 2 | Q10",
+      "uid": "2018-JULY-W2-Q10",
+      "display_no": "W02-Q10",
+      "week_label": "Week 2",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "AODV",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-2",
+        "year-2018"
+      ],
+      "sort_index": 30,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "The HART protocol was designed for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Home automation networking"
+        },
+        {
+          "key": "b",
+          "text": "Networked Smart Field devices"
+        },
+        {
+          "key": "c",
+          "text": "Vehicular networking"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Networked Smart Field devices"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q1",
+      "uid": "2018-JULY-W3-Q1",
+      "display_no": "W03-Q01",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Networked Smart Field devices",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 31,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "Channel hopping is performed at which HART layer?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Physical"
+        },
+        {
+          "key": "b",
+          "text": "Data link"
+        },
+        {
+          "key": "c",
+          "text": "Network"
+        },
+        {
+          "key": "d",
+          "text": "Application"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Data link"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q2",
+      "uid": "2018-JULY-W3-Q2",
+      "display_no": "W03-Q02",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Data link",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 32,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 3 | Q3",
+      "uid": "2018-JULY-W3-Q3",
+      "display_no": "W03-Q03",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 33,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "Bluetooth is a technology with:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Full duplex links"
+        },
+        {
+          "key": "b",
+          "text": "Half duplex links"
+        },
+        {
+          "key": "c",
+          "text": "Both a and b"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Full duplex links"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q4",
+      "uid": "2018-JULY-W3-Q4",
+      "display_no": "W03-Q04",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Full duplex links",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 34,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "The PHY and MAC layers in ISA 100.11A are based upon:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "IEEE 802.11a"
+        },
+        {
+          "key": "b",
+          "text": "IEEE 802.15.4"
+        },
+        {
+          "key": "c",
+          "text": "IEEE 802.15.6"
+        },
+        {
+          "key": "d",
+          "text": "IEEE 802.11g"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "IEEE 802.15.4"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q5",
+      "uid": "2018-JULY-W3-Q5",
+      "display_no": "W03-Q05",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "IEEE 802.15.4",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 35,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "The modulation scheme followed by Z-wave is:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "BPSK"
+        },
+        {
+          "key": "b",
+          "text": "QPSK"
+        },
+        {
+          "key": "c",
+          "text": "GFSK"
+        },
+        {
+          "key": "d",
+          "text": "O-QSK"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "GFSK"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q6",
+      "uid": "2018-JULY-W3-Q6",
+      "display_no": "W03-Q06",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "GFSK",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 36,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "Which of these is NOT a part of sensor web?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Observations & measurements (O&M)"
+        },
+        {
+          "key": "b",
+          "text": "Energy efficiency"
+        },
+        {
+          "key": "c",
+          "text": "Sensor model language (sensorml)"
+        },
+        {
+          "key": "d",
+          "text": "Transducer model language (transducerml or TML)"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Energy efficiency"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q7",
+      "uid": "2018-JULY-W3-Q7",
+      "display_no": "W03-Q07",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Energy efficiency",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 37,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "Which topology is supported by Z-wave:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Star"
+        },
+        {
+          "key": "b",
+          "text": "Mesh"
+        },
+        {
+          "key": "c",
+          "text": "Tree"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Mesh"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q8",
+      "uid": "2018-JULY-W3-Q8",
+      "display_no": "W03-Q08",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Mesh",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 38,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Event aware topology management in WSNs include:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Timely detection of an event of interest"
+        },
+        {
+          "key": "b",
+          "text": "Monitoring the event"
+        },
+        {
+          "key": "c",
+          "text": "Adapting with the changes of event state"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q9",
+      "uid": "2018-JULY-W3-Q9",
+      "display_no": "W03-Q09",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 39,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W3-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 3,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "WBAN stands for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Wireless Buffer Area Networks"
+        },
+        {
+          "key": "b",
+          "text": "Wireless Body Area Networks"
+        },
+        {
+          "key": "c",
+          "text": "Wired Body Area Networks"
+        },
+        {
+          "key": "d",
+          "text": "Wired Buffer Area Networks"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Wireless Body Area Networks"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 3 | Q10",
+      "uid": "2018-JULY-W3-Q10",
+      "display_no": "W03-Q10",
+      "week_label": "Week 3",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Wireless Body Area Networks",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-3",
+        "year-2018"
+      ],
+      "sort_index": 40,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "With respect to WSN coverage problems, the OGDC algorithm is an acronym for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Optimal Geographic Density Control"
+        },
+        {
+          "key": "b",
+          "text": "Optimal Geographic Distance Control"
+        },
+        {
+          "key": "c",
+          "text": "Optimal Geographic Distance Coverage"
+        },
+        {
+          "key": "d",
+          "text": "Optimal geographic Density Coverage"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Optimal Geographic Density Control"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q1",
+      "uid": "2018-JULY-W4-Q1",
+      "display_no": "W04-Q01",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Optimal Geographic Density Control",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 41,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "Which of these can be regarded as the salient feature(s) of a 3D UWSN architecture?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Silent & energy-efficient scheme for mobile UWSNs"
+        },
+        {
+          "key": "b",
+          "text": "Iterative approach with less initiator nodes (anchors) required"
+        },
+        {
+          "key": "c",
+          "text": "Mobility prediction"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q2",
+      "uid": "2018-JULY-W4-Q2",
+      "display_no": "W04-Q02",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 42,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 4 | Q3",
+      "uid": "2018-JULY-W4-Q3",
+      "display_no": "W04-Q03",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 43,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "WMSNs stand for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Wired Multimedia Sensor Networks"
+        },
+        {
+          "key": "b",
+          "text": "Wireless Multimedia Sensor Networks"
+        },
+        {
+          "key": "c",
+          "text": "Wireless Mobile Sensor Networks"
+        },
+        {
+          "key": "d",
+          "text": "Wireless Machine Sensor Network"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Wireless Multimedia Sensor Networks"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q4",
+      "uid": "2018-JULY-W4-Q4",
+      "display_no": "W04-Q04",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Wireless Multimedia Sensor Networks",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 44,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "UAV-VANETS link-up may be used for:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Visual guidance"
+        },
+        {
+          "key": "b",
+          "text": "Data-muling"
+        },
+        {
+          "key": "c",
+          "text": "Coverage enhancement"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q5",
+      "uid": "2018-JULY-W4-Q5",
+      "display_no": "W04-Q05",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 45,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Sensor coverage in WSNs deal with:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Sensor placement"
+        },
+        {
+          "key": "b",
+          "text": "Density control"
+        },
+        {
+          "key": "c",
+          "text": "Both a and b"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Both a and b"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q6",
+      "uid": "2018-JULY-W4-Q6",
+      "display_no": "W04-Q06",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Both a and b",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 46,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "In WSN area coverage problem, which is TRUE?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Energy-efficient random coverage"
+        },
+        {
+          "key": "b",
+          "text": "Connected random coverage"
+        },
+        {
+          "key": "c",
+          "text": "A network is connected if any active node can communicate with any other active nodes"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q7",
+      "uid": "2018-JULY-W4-Q7",
+      "display_no": "W04-Q07",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 47,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "In Human-centric sensing, which of these is NOT a constraint?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Energy of sensing devices"
+        },
+        {
+          "key": "b",
+          "text": "Privacy of users"
+        },
+        {
+          "key": "c",
+          "text": "Participant selection"
+        },
+        {
+          "key": "d",
+          "text": "Network size"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "Network size"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q8",
+      "uid": "2018-JULY-W4-Q8",
+      "display_no": "W04-Q08",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Network size",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 48,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Which of these topologies cannot be a reliable UAV network topology",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Star"
+        },
+        {
+          "key": "b",
+          "text": "Flat mesh"
+        },
+        {
+          "key": "c",
+          "text": "Hierarchical mesh"
+        },
+        {
+          "key": "d",
+          "text": "Tree"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "Tree"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q9",
+      "uid": "2018-JULY-W4-Q9",
+      "display_no": "W04-Q09",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Tree",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 49,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W4-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 4,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "Low-end M2M nodes are:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Mobile"
+        },
+        {
+          "key": "b",
+          "text": "Energy efficient"
+        },
+        {
+          "key": "c",
+          "text": "Complex"
+        },
+        {
+          "key": "d",
+          "text": "Costly"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Energy efficient"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 4 | Q10",
+      "uid": "2018-JULY-W4-Q10",
+      "display_no": "W04-Q10",
+      "week_label": "Week 4",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Energy efficient",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-4",
+        "year-2018"
+      ],
+      "sort_index": 50,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "In what type of pin, data pin of DHT sensor should be connected?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Analog pin"
+        },
+        {
+          "key": "b",
+          "text": "Digital pin"
+        },
+        {
+          "key": "c",
+          "text": "Any one of (a) and (b)"
+        },
+        {
+          "key": "d",
+          "text": "None of this"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Digital pin"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q1",
+      "uid": "2018-JULY-W5-Q1",
+      "display_no": "W05-Q01",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Digital pin",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 51,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "Why interoperability is required?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Heterogeneous wireless communication protocols"
+        },
+        {
+          "key": "b",
+          "text": "Different programming languages"
+        },
+        {
+          "key": "c",
+          "text": "Different control models"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q2",
+      "uid": "2018-JULY-W5-Q2",
+      "display_no": "W05-Q02",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 52,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 5 | Q3",
+      "uid": "2018-JULY-W5-Q3",
+      "display_no": "W05-Q03",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 53,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "Arduino boards support output supply voltage of:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "5V only"
+        },
+        {
+          "key": "b",
+          "text": "3.3 V only"
+        },
+        {
+          "key": "c",
+          "text": "9 V only"
+        },
+        {
+          "key": "d",
+          "text": "5V, 3.3V"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "5V, 3.3V"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q4",
+      "uid": "2018-JULY-W5-Q4",
+      "display_no": "W05-Q04",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "5V, 3.3V",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 54,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "Arduino UNO supports these numbers of PWM pins:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "5"
+        },
+        {
+          "key": "c",
+          "text": "6"
+        },
+        {
+          "key": "d",
+          "text": "14"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "6"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q5",
+      "uid": "2018-JULY-W5-Q5",
+      "display_no": "W05-Q05",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "6",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 55,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 6,
+      "type": "code_based",
+      "question": "What does the following Arduino code do?",
+      "code_block": "void Loop(){\n    Value = analogRead(LDR);\n    if(Value>1000){\n        Serial.println(Value);\n    }\n    delay(100);\n}",
+      "options": [
+        {
+          "key": "a",
+          "text": "Prints the value from sensor to console every 1000 milliseconds"
+        },
+        {
+          "key": "b",
+          "text": "Prints the value from the sensor to console every 100 milliseconds"
+        },
+        {
+          "key": "c",
+          "text": "Prints the value from the sensor to console if it is more than 1000, every 100 milliseconds"
+        },
+        {
+          "key": "d",
+          "text": "Prints the value from the sensor to console if it is delayed by 1000 seconds"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Prints the value from the sensor to console if it is more than 1000, every 100 milliseconds"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q6",
+      "uid": "2018-JULY-W5-Q6",
+      "display_no": "W05-Q06",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "code_based",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select_code",
+      "marks": 1,
+      "answer_display": "Prints the value from the sensor to console if it is more than 1000, every 100 milliseconds",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "topic-data",
+        "topic-iot",
+        "variety-code_based",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 56,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "What is the servo library command to move the shaft of Servo motor back and forth across 180 degree?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Knob()"
+        },
+        {
+          "key": "b",
+          "text": "Sweep()"
+        },
+        {
+          "key": "c",
+          "text": "write()"
+        },
+        {
+          "key": "d",
+          "text": "detach()"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "write()"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q7",
+      "uid": "2018-JULY-W5-Q7",
+      "display_no": "W05-Q07",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "write()",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 57,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "Arduino setup requires:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Arduino board and IDE"
+        },
+        {
+          "key": "b",
+          "text": "Arduino board, programmer board, IDE"
+        },
+        {
+          "key": "c",
+          "text": "Both A and B"
+        },
+        {
+          "key": "d",
+          "text": "None"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Arduino board and IDE"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q8",
+      "uid": "2018-JULY-W5-Q8",
+      "display_no": "W05-Q08",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Arduino board and IDE",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 58,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Which of the following library functions can be used to generate a random number in Arduino?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "randomize()"
+        },
+        {
+          "key": "b",
+          "text": "ran()"
+        },
+        {
+          "key": "c",
+          "text": "rand()"
+        },
+        {
+          "key": "d",
+          "text": "random()"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "random()"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q9",
+      "uid": "2018-JULY-W5-Q9",
+      "display_no": "W05-Q09",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "random()",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 59,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W5-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 5,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "Which pin of Arduino should be connected with the pin 3 of the 4-pin DHT sensor?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Pin 5V"
+        },
+        {
+          "key": "b",
+          "text": "Pin 3.3V"
+        },
+        {
+          "key": "c",
+          "text": "Pin GND"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "None of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 5 | Q10",
+      "uid": "2018-JULY-W5-Q10",
+      "display_no": "W05-Q10",
+      "week_label": "Week 5",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "None of these",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-5",
+        "year-2018"
+      ],
+      "sort_index": 60,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Which one is correct for the nested controlling statements in Python?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Elseif"
+        },
+        {
+          "key": "b",
+          "text": "Elif"
+        },
+        {
+          "key": "c",
+          "text": "Ifwhile"
+        },
+        {
+          "key": "d",
+          "text": "none"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Elif"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q1",
+      "uid": "2018-JULY-W6-Q1",
+      "display_no": "W06-Q01",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Elif",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 61,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "Which of the following datatype is correct for the object below? D = ['python', 3.43, 'p', 100]",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Array"
+        },
+        {
+          "key": "b",
+          "text": "Dictionary"
+        },
+        {
+          "key": "c",
+          "text": "Tuple"
+        },
+        {
+          "key": "d",
+          "text": "List"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "List"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q2",
+      "uid": "2018-JULY-W6-Q2",
+      "display_no": "W06-Q02",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "List",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 62,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 6 | Q3",
+      "uid": "2018-JULY-W6-Q3",
+      "display_no": "W06-Q03",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 63,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "What is the maximum peripheral current draw allowed in Raspberry pi 3?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "1200mA"
+        },
+        {
+          "key": "b",
+          "text": "700mA"
+        },
+        {
+          "key": "c",
+          "text": "500mA"
+        },
+        {
+          "key": "d",
+          "text": "100mA"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "1200mA"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q4",
+      "uid": "2018-JULY-W6-Q4",
+      "display_no": "W06-Q04",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "1200mA",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 64,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "What does the method isatty() return for an existing interactive file stream in Python:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Int"
+        },
+        {
+          "key": "b",
+          "text": "String"
+        },
+        {
+          "key": "c",
+          "text": "Bool:True"
+        },
+        {
+          "key": "d",
+          "text": "Bool:False"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Bool:True"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q5",
+      "uid": "2018-JULY-W6-Q5",
+      "display_no": "W06-Q05",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Bool:True",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 65,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Relay is a kind of:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Sensor"
+        },
+        {
+          "key": "b",
+          "text": "Actuator"
+        },
+        {
+          "key": "c",
+          "text": "Hub"
+        },
+        {
+          "key": "d",
+          "text": "Router"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Actuator"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q6",
+      "uid": "2018-JULY-W6-Q6",
+      "display_no": "W06-Q06",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Actuator",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 66,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "What are the mode/modes used for addressing the pins in Raspberry Pi?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "GPIO"
+        },
+        {
+          "key": "b",
+          "text": "BCM"
+        },
+        {
+          "key": "c",
+          "text": "BOARD and BCM"
+        },
+        {
+          "key": "d",
+          "text": "GPIO, BCM and CAN"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "BOARD and BCM"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q7",
+      "uid": "2018-JULY-W6-Q7",
+      "display_no": "W06-Q07",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "BOARD and BCM",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 67,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "The BCM 14 pin of Raspberry Pi is:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Physical pin 8"
+        },
+        {
+          "key": "b",
+          "text": "UART"
+        },
+        {
+          "key": "c",
+          "text": "Transmitter pin"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q8",
+      "uid": "2018-JULY-W6-Q8",
+      "display_no": "W06-Q08",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 68,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Internet of Things refers to:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Interconnection of devices in a network"
+        },
+        {
+          "key": "b",
+          "text": "Exchange of data between devices in a network"
+        },
+        {
+          "key": "c",
+          "text": "An ecosystem of devices, accessible through internet"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q9",
+      "uid": "2018-JULY-W6-Q9",
+      "display_no": "W06-Q09",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 69,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W6-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 6,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "Devices in IoT support:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Sensing"
+        },
+        {
+          "key": "b",
+          "text": "Actuating"
+        },
+        {
+          "key": "c",
+          "text": "Data Collection"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 6 | Q10",
+      "uid": "2018-JULY-W6-Q10",
+      "display_no": "W06-Q10",
+      "week_label": "Week 6",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-6",
+        "year-2018"
+      ],
+      "sort_index": 70,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Opening a file in append mode in Python:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Overrides the existing data in the file"
+        },
+        {
+          "key": "b",
+          "text": "Adds the new data to the end of the existing file"
+        },
+        {
+          "key": "c",
+          "text": "Adds the new data at the beginning of the existing file"
+        },
+        {
+          "key": "d",
+          "text": "Cannot write data to a file in append mode"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Adds the new data to the end of the existing file"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q1",
+      "uid": "2018-JULY-W7-Q1",
+      "display_no": "W07-Q01",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Adds the new data to the end of the existing file",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 71,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "Control message from a switch to controller in SDN is termed as:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Flow-rule message"
+        },
+        {
+          "key": "b",
+          "text": "PACKET-IN message"
+        },
+        {
+          "key": "c",
+          "text": "Control message"
+        },
+        {
+          "key": "d",
+          "text": "Data message"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "PACKET-IN message"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q2",
+      "uid": "2018-JULY-W7-Q2",
+      "display_no": "W07-Q02",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "PACKET-IN message",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 72,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 7 | Q3",
+      "uid": "2018-JULY-W7-Q3",
+      "display_no": "W07-Q03",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 73,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "Protocol used for connectionless socket programming:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "TCP"
+        },
+        {
+          "key": "b",
+          "text": "UDP"
+        },
+        {
+          "key": "c",
+          "text": "Both"
+        },
+        {
+          "key": "d",
+          "text": "None"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "UDP"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q4",
+      "uid": "2018-JULY-W7-Q4",
+      "display_no": "W07-Q04",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "UDP",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 74,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "When does a switch send PAKCET-IN message to a controller in SDN?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Flow-rule associated with a received flow does not exist"
+        },
+        {
+          "key": "b",
+          "text": "All the time"
+        },
+        {
+          "key": "c",
+          "text": "After deleting a flow-rule"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Flow-rule associated with a received flow does not exist"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q5",
+      "uid": "2018-JULY-W7-Q5",
+      "display_no": "W07-Q05",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Flow-rule associated with a received flow does not exist",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 75,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Which one is an SDN controller:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "POX"
+        },
+        {
+          "key": "b",
+          "text": "OpenDayLight"
+        },
+        {
+          "key": "c",
+          "text": "ONOS"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q6",
+      "uid": "2018-JULY-W7-Q6",
+      "display_no": "W07-Q06",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 76,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 7,
+      "type": "code_based",
+      "question": "Give the output of the following snippet: Name = 'Split-this-string'; Name.split('-')",
+      "code_block": "Name = 'Split-this-string'\nName.split('-')",
+      "options": [
+        {
+          "key": "a",
+          "text": "[\"Split\", \"this\", \"string\"]"
+        },
+        {
+          "key": "b",
+          "text": "Split, this, string"
+        },
+        {
+          "key": "c",
+          "text": "[\"Split-\", \"this-\", \"string\"]"
+        },
+        {
+          "key": "d",
+          "text": "Split this string"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "[\"Split\", \"this\", \"string\"]"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q7",
+      "uid": "2018-JULY-W7-Q7",
+      "display_no": "W07-Q07",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "code_based",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select_code",
+      "marks": 1,
+      "answer_display": "[\"Split\", \"this\", \"string\"]",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-code_based",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 77,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "Application program interface (API) used between application and control planes is known as:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Northbound API"
+        },
+        {
+          "key": "b",
+          "text": "Eastbound API"
+        },
+        {
+          "key": "c",
+          "text": "Southbound API"
+        },
+        {
+          "key": "d",
+          "text": "Westbound API"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Northbound API"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q8",
+      "uid": "2018-JULY-W7-Q8",
+      "display_no": "W07-Q08",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Northbound API",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 78,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "An SDN Controller can be placed based on:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Hierarchical manner"
+        },
+        {
+          "key": "b",
+          "text": "Star-topology"
+        },
+        {
+          "key": "c",
+          "text": "Mesh topology"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q9",
+      "uid": "2018-JULY-W7-Q9",
+      "display_no": "W07-Q09",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 79,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W7-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 7,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "Which of the following is not a function in matplotlib library of Python:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Display()"
+        },
+        {
+          "key": "b",
+          "text": "Show()"
+        },
+        {
+          "key": "c",
+          "text": "Subplot()"
+        },
+        {
+          "key": "d",
+          "text": "Title()"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Display()"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 7 | Q10",
+      "uid": "2018-JULY-W7-Q10",
+      "display_no": "W07-Q10",
+      "week_label": "Week 7",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "coding",
+      "focus_type": "coding",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Display()",
+      "has_code": true,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-coding",
+        "session-july",
+        "variety-mcq",
+        "week-7",
+        "year-2018"
+      ],
+      "sort_index": 80,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "The major challenge(s) in Software Defined IoT is(are):",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Mobility of devices"
+        },
+        {
+          "key": "b",
+          "text": "Heterogeneity of devices"
+        },
+        {
+          "key": "c",
+          "text": "Resource-constraint"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q1",
+      "uid": "2018-JULY-W8-Q1",
+      "display_no": "W08-Q01",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 81,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 2,
+      "type": "mcq",
+      "question": "From the below given options, which is not a characteristic of cloud computing?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Low management effort"
+        },
+        {
+          "key": "b",
+          "text": "Low level generalization of computation"
+        },
+        {
+          "key": "c",
+          "text": "On-demand network access"
+        },
+        {
+          "key": "d",
+          "text": "Configurable computing resources"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Low level generalization of computation"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q2",
+      "uid": "2018-JULY-W8-Q2",
+      "display_no": "W08-Q02",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Low level generalization of computation",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 82,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 8 | Q3",
+      "uid": "2018-JULY-W8-Q3",
+      "display_no": "W08-Q03",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 83,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "If the devices are highly mobile in IoT, one of the disadvantage of using SDN can be:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "High control overhead"
+        },
+        {
+          "key": "b",
+          "text": "Low data rate"
+        },
+        {
+          "key": "c",
+          "text": "All of the above"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "High control overhead"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q4",
+      "uid": "2018-JULY-W8-Q4",
+      "display_no": "W08-Q04",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "High control overhead",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 84,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "Broad network access in cloud deals with",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Dynamic allocation for scale out"
+        },
+        {
+          "key": "b",
+          "text": "Recorded resource usage"
+        },
+        {
+          "key": "c",
+          "text": "Availability of cloud resources over the network"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Availability of cloud resources over the network"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q5",
+      "uid": "2018-JULY-W8-Q5",
+      "display_no": "W08-Q05",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Availability of cloud resources over the network",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 85,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Mice flows have:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Large duration"
+        },
+        {
+          "key": "b",
+          "text": "Short duration"
+        },
+        {
+          "key": "c",
+          "text": "Moderately large duration"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Short duration"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q6",
+      "uid": "2018-JULY-W8-Q6",
+      "display_no": "W08-Q06",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Short duration",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 86,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "What is the full form of HDFS?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Hadoop distributed file system"
+        },
+        {
+          "key": "b",
+          "text": "Hadoop database file system"
+        },
+        {
+          "key": "c",
+          "text": "Half-duplex file system"
+        },
+        {
+          "key": "d",
+          "text": "Hadoop decentralized file system"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Hadoop distributed file system"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q7",
+      "uid": "2018-JULY-W8-Q7",
+      "display_no": "W08-Q07",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Hadoop distributed file system",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 87,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "Which of the following is not a part of Hadoop?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "HDFS"
+        },
+        {
+          "key": "b",
+          "text": "YARN"
+        },
+        {
+          "key": "c",
+          "text": "Both the above"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "None of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q8",
+      "uid": "2018-JULY-W8-Q8",
+      "display_no": "W08-Q08",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "None of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 88,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "GreenCloud Simulator is designed based on",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "NS-3"
+        },
+        {
+          "key": "b",
+          "text": "NS-2"
+        },
+        {
+          "key": "c",
+          "text": "CloudSim"
+        },
+        {
+          "key": "d",
+          "text": "DCSim"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "NS-2"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q9",
+      "uid": "2018-JULY-W8-Q9",
+      "display_no": "W08-Q09",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "NS-2",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 89,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W8-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 8,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "The disadvantage(s) of private cloud is/are:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Total control over the system and data"
+        },
+        {
+          "key": "b",
+          "text": "Regular maintenance"
+        },
+        {
+          "key": "c",
+          "text": "Minimum security concerns"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Regular maintenance"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 8 | Q10",
+      "uid": "2018-JULY-W8-Q10",
+      "display_no": "W08-Q10",
+      "week_label": "Week 8",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Regular maintenance",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-8",
+        "year-2018"
+      ],
+      "sort_index": 90,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Resource usage information in service accounting is obtained in the form of",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Data set"
+        },
+        {
+          "key": "b",
+          "text": "Tables"
+        },
+        {
+          "key": "c",
+          "text": "Records"
+        },
+        {
+          "key": "d",
+          "text": "Any form"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Records"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q1",
+      "uid": "2018-JULY-W9-Q1",
+      "display_no": "W09-Q01",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Records",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 91,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 2,
+      "type": "fill_blank",
+      "question": "We normally take snapshot in Openstack, _______.",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "After the installation of an instance"
+        },
+        {
+          "key": "b",
+          "text": "Before the installation of an instance"
+        },
+        {
+          "key": "c",
+          "text": "It is an inbuilt image in Openstack"
+        },
+        {
+          "key": "d",
+          "text": "It should be downloaded from the internet"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "After the installation of an instance"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q2",
+      "uid": "2018-JULY-W9-Q2",
+      "display_no": "W09-Q02",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "fill_blank",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select_fill_blank",
+      "marks": 1,
+      "answer_display": "After the installation of an instance",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-fill_blank",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 92,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 9 | Q3",
+      "uid": "2018-JULY-W9-Q3",
+      "display_no": "W09-Q03",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 93,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "Which of the following statement is TRUE in sensor-cloud",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "End user procures sensors and lends these to sensor-cloud service provider"
+        },
+        {
+          "key": "b",
+          "text": "Sensor-cloud is based only on dumping the sensor data to the cloud"
+        },
+        {
+          "key": "c",
+          "text": "Single sensor nodes is shared dedicatedly with only one end user"
+        },
+        {
+          "key": "d",
+          "text": "None of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "None of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q4",
+      "uid": "2018-JULY-W9-Q4",
+      "display_no": "W09-Q04",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "None of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 94,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "Blue Pill attack on hypervisor is a threat example of:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Host security at PaaS level"
+        },
+        {
+          "key": "b",
+          "text": "Host security at SaaS level"
+        },
+        {
+          "key": "c",
+          "text": "Host security at IaaS level"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "Host security at IaaS level"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q5",
+      "uid": "2018-JULY-W9-Q5",
+      "display_no": "W09-Q05",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Host security at IaaS level",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 95,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Why data volume is a problem in IoT-based cloud computing?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "because data are encrypted and hard to analyze"
+        },
+        {
+          "key": "b",
+          "text": "because data coming from IoT devices are always in raw format and difficult to store"
+        },
+        {
+          "key": "c",
+          "text": "because the density of IoT devices is increasing each day and in turn the volume of generated data is growing very fast"
+        },
+        {
+          "key": "d",
+          "text": "because IoT device density is decreasing each day and in turn the volume of generated data are decreasing very fast"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "because the density of IoT devices is increasing each day and in turn the volume of generated data is growing very fast"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q6",
+      "uid": "2018-JULY-W9-Q6",
+      "display_no": "W09-Q06",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "because the density of IoT devices is increasing each day and in turn the volume of generated data is growing very fast",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 96,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "Which layer is responsible for user authentication in cloud computing",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "IaaS layer"
+        },
+        {
+          "key": "b",
+          "text": "PaaS layer"
+        },
+        {
+          "key": "c",
+          "text": "SaaS layer"
+        },
+        {
+          "key": "d",
+          "text": "Both IaaS and PaaS layer"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "PaaS layer"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q7",
+      "uid": "2018-JULY-W9-Q7",
+      "display_no": "W09-Q07",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "PaaS layer",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 97,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "What is a good approach to reduce latency?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Analyzing data close to the data source"
+        },
+        {
+          "key": "b",
+          "text": "Analyzing data in cloud"
+        },
+        {
+          "key": "c",
+          "text": "Increasing number of nodes"
+        },
+        {
+          "key": "d",
+          "text": "Decreasing number of nodes"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Analyzing data close to the data source"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q8",
+      "uid": "2018-JULY-W9-Q8",
+      "display_no": "W09-Q08",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Analyzing data close to the data source",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-networking",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 98,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "What are less time-sensitive data?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Data which can be analyzed after seconds or minutes"
+        },
+        {
+          "key": "b",
+          "text": "Data which should be analyzed within fraction of a second"
+        },
+        {
+          "key": "c",
+          "text": "Data which can wait for hours, days, weeks"
+        },
+        {
+          "key": "d",
+          "text": "Data which can wait for months"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Data which can be analyzed after seconds or minutes"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q9",
+      "uid": "2018-JULY-W9-Q9",
+      "display_no": "W09-Q09",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Data which can be analyzed after seconds or minutes",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 99,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W9-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 9,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "How many layers exist in CloudSim architecture?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "4"
+        },
+        {
+          "key": "b",
+          "text": "1"
+        },
+        {
+          "key": "c",
+          "text": "3"
+        },
+        {
+          "key": "d",
+          "text": "2"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "c"
+        ],
+        "text": [
+          "3"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 9 | Q10",
+      "uid": "2018-JULY-W9-Q10",
+      "display_no": "W09-Q10",
+      "week_label": "Week 9",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "3",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-9",
+        "year-2018"
+      ],
+      "sort_index": 100,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q1",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 1,
+      "type": "mcq",
+      "question": "Passive and omnidirectional sensor is",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Temperature"
+        },
+        {
+          "key": "b",
+          "text": "Water-level"
+        },
+        {
+          "key": "c",
+          "text": "Soil moisture"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q1",
+      "uid": "2018-JULY-W12-Q1",
+      "display_no": "W12-Q01",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 101,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q2",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 2,
+      "type": "fill_blank",
+      "question": "If all the data points are same, statistical dispersion becomes –",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "1"
+        },
+        {
+          "key": "b",
+          "text": "10"
+        },
+        {
+          "key": "c",
+          "text": "100"
+        },
+        {
+          "key": "d",
+          "text": "None"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "None"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q2",
+      "uid": "2018-JULY-W12-Q2",
+      "display_no": "W12-Q02",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "fill_blank",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select_fill_blank",
+      "marks": 1,
+      "answer_display": "None",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-fill_blank",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 102,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q3",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 3,
+      "type": "mcq",
+      "question": "Skipped by user request before final extraction.",
+      "code_block": null,
+      "options": [],
+      "answer": {
+        "keys": [],
+        "text": []
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": true,
+      "remove_reason": "user_skipped_q3",
+      "source_label": "2018 JULY | Week 12 | Q3",
+      "uid": "2018-JULY-W12-Q3",
+      "display_no": "W12-Q03",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "",
+      "has_code": false,
+      "has_image": false,
+      "is_active": false,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 103,
+      "question_status": "removed",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q4",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 4,
+      "type": "mcq",
+      "question": "The characteristics of a sensor node are",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Energy-efficiency"
+        },
+        {
+          "key": "b",
+          "text": "Distributed sensing"
+        },
+        {
+          "key": "c",
+          "text": "Low-cost"
+        },
+        {
+          "key": "d",
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q4",
+      "uid": "2018-JULY-W12-Q4",
+      "display_no": "W12-Q04",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 104,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q5",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 5,
+      "type": "mcq",
+      "question": "What is the network topology of Ambusens WBAN devices",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Bus topology"
+        },
+        {
+          "key": "b",
+          "text": "Star Topology"
+        },
+        {
+          "key": "c",
+          "text": "Mesh Topology"
+        },
+        {
+          "key": "d",
+          "text": "None of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "b"
+        ],
+        "text": [
+          "Star Topology"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q5",
+      "uid": "2018-JULY-W12-Q5",
+      "display_no": "W12-Q05",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Star Topology",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 105,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q6",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 6,
+      "type": "mcq",
+      "question": "Long term trend tracking and preventive care in IoT healthcare is possible due to",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "ability of smart devices to collect data autonomously"
+        },
+        {
+          "key": "b",
+          "text": "ubiquitous connectivity"
+        },
+        {
+          "key": "c",
+          "text": "smart algorithms and analytics"
+        },
+        {
+          "key": "d",
+          "text": "all of the above"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "all of the above"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q6",
+      "uid": "2018-JULY-W12-Q6",
+      "display_no": "W12-Q06",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "all of the above",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-data",
+        "topic-iot",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 106,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q7",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 7,
+      "type": "mcq",
+      "question": "IoT-based sensing layer devices typically communicate with each other using which of the following?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Short range communication technologies such as Bluetooth and Zigbee"
+        },
+        {
+          "key": "b",
+          "text": "Long range communication technologies such as WLAN, WiMAX and LTE"
+        },
+        {
+          "key": "c",
+          "text": "Both may be used"
+        },
+        {
+          "key": "d",
+          "text": "Devices do not communicate with each other"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Short range communication technologies such as Bluetooth and Zigbee"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q7",
+      "uid": "2018-JULY-W12-Q7",
+      "display_no": "W12-Q07",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Short range communication technologies such as Bluetooth and Zigbee",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "topic-networking",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 107,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q8",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 8,
+      "type": "mcq",
+      "question": "Activity monitoring in smart homes:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Provides better quality of life"
+        },
+        {
+          "key": "b",
+          "text": "Provides information accurately in a reliable manner"
+        },
+        {
+          "key": "c",
+          "text": "Provides continuous monitoring support."
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q8",
+      "uid": "2018-JULY-W12-Q8",
+      "display_no": "W12-Q08",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 108,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q9",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 9,
+      "type": "mcq",
+      "question": "Which of these sensors can be most cheaply used for activity monitoring in wearables?",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Accelerometer"
+        },
+        {
+          "key": "b",
+          "text": "Cameras"
+        },
+        {
+          "key": "c",
+          "text": "LIDARs"
+        },
+        {
+          "key": "d",
+          "text": "LED"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "a"
+        ],
+        "text": [
+          "Accelerometer"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q9",
+      "uid": "2018-JULY-W12-Q9",
+      "display_no": "W12-Q09",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "Accelerometer",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "topic-iot",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 109,
+      "question_status": "active",
+      "schema_version": 2
+    },
+    {
+      "id": "2018-JULY-W12-Q10",
+      "year": 2018,
+      "session": "JULY",
+      "week": 12,
+      "qNum": 10,
+      "type": "mcq",
+      "question": "Network-based activity recognition is:",
+      "code_block": null,
+      "options": [
+        {
+          "key": "a",
+          "text": "Larger and processing intensive"
+        },
+        {
+          "key": "b",
+          "text": "Low power consumption"
+        },
+        {
+          "key": "c",
+          "text": "Dependent on network connection"
+        },
+        {
+          "key": "d",
+          "text": "All of these"
+        }
+      ],
+      "answer": {
+        "keys": [
+          "d"
+        ],
+        "text": [
+          "All of these"
+        ]
+      },
+      "detailed_solution": "",
+      "reference": "",
+      "needs_image": false,
+      "removed": false,
+      "remove_reason": null,
+      "source_label": "2018 JULY | Week 12 | Q10",
+      "uid": "2018-JULY-W12-Q10",
+      "display_no": "W12-Q10",
+      "week_label": "Week 12",
+      "session_label": "2018 JULY",
+      "variety_tag": "mcq",
+      "practice_tag": "conceptual",
+      "focus_type": "conceptual",
+      "response_mode": "single_select",
+      "marks": 1,
+      "answer_display": "All of these",
+      "has_code": false,
+      "has_image": false,
+      "is_active": true,
+      "is_single_answer": true,
+      "tags": [
+        "group-conceptual",
+        "session-july",
+        "variety-mcq",
+        "week-12",
+        "year-2018"
+      ],
+      "sort_index": 110,
+      "question_status": "active",
+      "schema_version": 2
+    }
+  ],
+  "format_version": "nptel_iot_practice_v2",
+  "schema_version": 2,
+  "source_name": "NPTEL - Introduction to Internet of Things",
+  "slug": "2018_july",
+  "summary": {
+    "total_questions": 110,
+    "active_questions": 99,
+    "removed_questions": 11,
+    "coding_questions": 16,
+    "visual_questions": 0,
+    "conceptual_questions": 94,
+    "question_type_breakdown": {
+      "code_based": 2,
+      "fill_blank": 2,
+      "mcq": 106
+    },
+    "practice_tag_breakdown": {
+      "coding": 16,
+      "conceptual": 94
+    },
+    "weeks_breakdown": {
+      "0": 10,
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 10,
+      "5": 10,
+      "6": 10,
+      "7": 10,
+      "8": 10,
+      "9": 10,
+      "12": 10
+    },
+    "total_marks": 99
+  },
+  "exam_pattern": {
+    "practice_mode": "nptel_style_practice",
+    "practice_scoring_model": "1 mark per question inside this practice app",
+    "certification_weightage_hint": {
+      "assignment_weight_percent": 25,
+      "proctored_exam_weight_percent": 75,
+      "assignment_best_of": "course_specific",
+      "course_note": "NPTEL course pages show that best-assignment aggregation varies by course, while certification commonly uses 25% assignment and 75% proctored exam weightage."
+    }
+  }
+}

@@ -1,0 +1,451 @@
+{
+  "datasets": [
+    {
+      "file": "2018_JULY_single.json",
+      "title": "NPTEL IoT 2018 JULY",
+      "year": 2018,
+      "session": "JULY",
+      "slug": "2018_july",
+      "summary": {
+        "total_questions": 110,
+        "active_questions": 99,
+        "removed_questions": 11,
+        "coding_questions": 16,
+        "visual_questions": 0,
+        "conceptual_questions": 94,
+        "question_type_breakdown": {
+          "code_based": 2,
+          "fill_blank": 2,
+          "mcq": 106
+        },
+        "practice_tag_breakdown": {
+          "coding": 16,
+          "conceptual": 94
+        },
+        "weeks_breakdown": {
+          "0": 10,
+          "1": 10,
+          "2": 10,
+          "3": 10,
+          "4": 10,
+          "5": 10,
+          "6": 10,
+          "7": 10,
+          "8": 10,
+          "9": 10,
+          "12": 10
+        },
+        "total_marks": 99
+      }
+    },
+    {
+      "file": "2020_JULY_single.json",
+      "title": "NPTEL IoT 2020 JULY",
+      "year": 2020,
+      "session": "JULY",
+      "slug": "2020_july",
+      "summary": {
+        "total_questions": 178,
+        "active_questions": 178,
+        "removed_questions": 0,
+        "coding_questions": 25,
+        "visual_questions": 0,
+        "conceptual_questions": 153,
+        "question_type_breakdown": {
+          "code_based": 24,
+          "fill_blank": 4,
+          "mcq": 133,
+          "true_false": 17
+        },
+        "practice_tag_breakdown": {
+          "coding": 25,
+          "conceptual": 153
+        },
+        "weeks_breakdown": {
+          "1": 13,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 178
+      }
+    },
+    {
+      "file": "2021_JULY_single.json",
+      "title": "NPTEL IoT 2021 JULY",
+      "year": 2021,
+      "session": "JULY",
+      "slug": "2021_july",
+      "summary": {
+        "total_questions": 195,
+        "active_questions": 193,
+        "removed_questions": 2,
+        "coding_questions": 19,
+        "visual_questions": 176,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "fill_blank": 12,
+          "image_based": 2,
+          "mcq": 162,
+          "true_false": 19
+        },
+        "practice_tag_breakdown": {
+          "coding": 19,
+          "visual": 176
+        },
+        "weeks_breakdown": {
+          "0": 15,
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 193
+      }
+    },
+    {
+      "file": "2022_JAN_single.json",
+      "title": "NPTEL IoT 2022 JULY",
+      "year": 2022,
+      "session": "JULY",
+      "slug": "2022_july",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 179,
+        "removed_questions": 1,
+        "coding_questions": 20,
+        "visual_questions": 160,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 6,
+          "fill_blank": 20,
+          "image_based": 1,
+          "mcq": 126,
+          "true_false": 27
+        },
+        "practice_tag_breakdown": {
+          "coding": 20,
+          "visual": 160
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 179
+      }
+    },
+    {
+      "file": "2022_JULY_single.json",
+      "title": "NPTEL IoT 2022 JULY",
+      "year": 2022,
+      "session": "JULY",
+      "slug": "2022_july",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 179,
+        "removed_questions": 1,
+        "coding_questions": 20,
+        "visual_questions": 160,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 6,
+          "fill_blank": 20,
+          "image_based": 1,
+          "mcq": 126,
+          "true_false": 27
+        },
+        "practice_tag_breakdown": {
+          "coding": 20,
+          "visual": 160
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 179
+      }
+    },
+    {
+      "file": "2023_JAN_single.json",
+      "title": "NPTEL IoT 2023 JAN",
+      "year": 2023,
+      "session": "JAN",
+      "slug": "2023_jan",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 179,
+        "removed_questions": 1,
+        "coding_questions": 23,
+        "visual_questions": 157,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 3,
+          "fill_blank": 37,
+          "image_based": 1,
+          "mcq": 116,
+          "true_false": 23
+        },
+        "practice_tag_breakdown": {
+          "coding": 23,
+          "visual": 157
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 179
+      }
+    },
+    {
+      "file": "2023_JULY_single.json",
+      "title": "NPTEL IoT 2023 JULY",
+      "year": 2023,
+      "session": "JULY",
+      "slug": "2023_july",
+      "summary": {
+        "total_questions": 190,
+        "active_questions": 188,
+        "removed_questions": 2,
+        "coding_questions": 24,
+        "visual_questions": 166,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 4,
+          "fill_blank": 45,
+          "image_based": 2,
+          "mcq": 103,
+          "true_false": 36
+        },
+        "practice_tag_breakdown": {
+          "coding": 24,
+          "visual": 166
+        },
+        "weeks_breakdown": {
+          "0": 10,
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 188
+      }
+    },
+    {
+      "file": "2024_JAN_single.json",
+      "title": "NPTEL IoT 2024 JAN",
+      "year": 2024,
+      "session": "JAN",
+      "slug": "2024_jan",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 179,
+        "removed_questions": 1,
+        "coding_questions": 19,
+        "visual_questions": 161,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 1,
+          "fill_blank": 43,
+          "image_based": 1,
+          "mcq": 100,
+          "true_false": 35
+        },
+        "practice_tag_breakdown": {
+          "coding": 19,
+          "visual": 161
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 179
+      }
+    },
+    {
+      "file": "2024_JULY_single.json",
+      "title": "NPTEL IoT 2024 JULY",
+      "year": 2024,
+      "session": "JULY",
+      "slug": "2024_july",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 180,
+        "removed_questions": 0,
+        "coding_questions": 24,
+        "visual_questions": 156,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 7,
+          "fill_blank": 46,
+          "mcq": 82,
+          "true_false": 45
+        },
+        "practice_tag_breakdown": {
+          "coding": 24,
+          "visual": 156
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 180
+      }
+    },
+    {
+      "file": "2025_JAN_single.json",
+      "title": "NPTEL IoT 2025 JAN",
+      "year": 2025,
+      "session": "JAN",
+      "slug": "2025_jan",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 178,
+        "removed_questions": 2,
+        "coding_questions": 22,
+        "visual_questions": 158,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 5,
+          "fill_blank": 32,
+          "image_based": 2,
+          "mcq": 96,
+          "true_false": 45
+        },
+        "practice_tag_breakdown": {
+          "coding": 22,
+          "visual": 158
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 178
+      }
+    },
+    {
+      "file": "2025_JULY_single.json",
+      "title": "NPTEL IoT 2025 JULY",
+      "year": 2025,
+      "session": "JULY",
+      "slug": "2025_july",
+      "summary": {
+        "total_questions": 180,
+        "active_questions": 176,
+        "removed_questions": 4,
+        "coding_questions": 28,
+        "visual_questions": 152,
+        "conceptual_questions": 0,
+        "question_type_breakdown": {
+          "code_based": 9,
+          "fill_blank": 29,
+          "image_based": 4,
+          "mcq": 98,
+          "true_false": 40
+        },
+        "practice_tag_breakdown": {
+          "coding": 28,
+          "visual": 152
+        },
+        "weeks_breakdown": {
+          "1": 15,
+          "2": 15,
+          "3": 15,
+          "4": 15,
+          "5": 15,
+          "6": 15,
+          "7": 15,
+          "8": 15,
+          "9": 15,
+          "10": 15,
+          "11": 15,
+          "12": 15
+        },
+        "total_marks": 176
+      }
+    }
+  ]
+}
