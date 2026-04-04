@@ -1,6 +1,6 @@
 const APP_CONFIG = {
   noticeText:
-    'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka+nptel@gmail.com or contact @niteshjeee on telegram or instagram.',
+    'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee. Image-based questions stay hidden only when they truly require missing assets in /images.',
   noticeDurationMs: 5000,
   maxTestQuestions: 50,
   manifestPath: './data/manifest.json',
@@ -279,11 +279,13 @@ function getDatasetRuntimeSummary(dataset) {
 
   const total = questions.length;
   const removed = questions.filter((question) => Boolean(question.removed)).length;
-  const imageRequired = questions.filter((question) => Boolean(question.blockedVisual)).length;
+  const imageRequired = questions.filter((question) => !question.removed && Boolean(question.blockedVisual)).length;
   const ready = questions.filter((question) => !question.removed && !question.blockedVisual).length;
-  const coding = questions.filter((question) => !question.removed && question.practiceTag === 'coding').length;
+  const coding = questions.filter(
+    (question) => !question.removed && !question.blockedVisual && question.practiceTag === 'coding'
+  ).length;
   const conceptual = questions.filter(
-    (question) => !question.removed && question.practiceTag === 'conceptual'
+    (question) => !question.removed && !question.blockedVisual && question.practiceTag === 'conceptual'
   ).length;
 
   return { total, removed, imageRequired, ready, coding, conceptual };
@@ -360,8 +362,6 @@ function normalizeQuestion(question, bank, index) {
     question.image_required === true ||
       question.needs_image === true ||
       question.type === 'image_based' ||
-      practiceTag === 'visual' ||
-      varietyTag === 'visual' ||
       /visual/i.test(String(responseMode))
   );
 
@@ -510,7 +510,7 @@ function applyDefaultFilters() {
   if (dom.hideImagePendingToggle) dom.hideImagePendingToggle.checked = true;
   if (dom.shuffleQuestionsToggle) dom.shuffleQuestionsToggle.checked = true;
   if (dom.shuffleOptionsToggle) dom.shuffleOptionsToggle.checked = true;
-  if (dom.showSolutionsToggle) dom.showSolutionsToggle.checked = false;
+  if (dom.showSolutionsToggle) dom.showSolutionsToggle.checked = true;
   if (dom.showReferenceToggle) dom.showReferenceToggle.checked = true;
 }
 
@@ -660,19 +660,20 @@ function applyQuickPreset(key) {
 
 function updateStats() {
   const total = state.allQuestions.length;
+  const removed = state.allQuestions.filter((question) => question.removed).length;
+  const imageHidden = state.allQuestions.filter((question) => !question.removed && question.blockedVisual).length;
   const active = state.allQuestions.filter((question) => !question.removed && !question.blockedVisual).length;
-  const visualBlocked = state.allQuestions.filter((question) => question.blockedVisual).length;
   const coding = state.allQuestions.filter(
-    (question) => !question.removed && question.practiceTag === 'coding'
+    (question) => !question.removed && !question.blockedVisual && question.practiceTag === 'coding'
   ).length;
   const years = new Set(state.allQuestions.map((question) => question.year)).size;
   const types = new Set(state.allQuestions.map((question) => question.varietyTag)).size;
 
-  state.summary = { total, active, blockedVisual: visualBlocked, coding };
+  state.summary = { total, active, blockedVisual: imageHidden, coding, removed };
 
   if (dom.totalQuestionsStat) dom.totalQuestionsStat.textContent = String(total);
   if (dom.usableQuestionsStat) dom.usableQuestionsStat.textContent = String(active);
-  if (dom.imagePendingStat) dom.imagePendingStat.textContent = String(visualBlocked);
+  if (dom.imagePendingStat) dom.imagePendingStat.textContent = String(imageHidden);
   if (dom.historyStat) dom.historyStat.textContent = String(state.history.length);
   if (dom.yearsStat) dom.yearsStat.textContent = String(years);
   if (dom.typesStat) dom.typesStat.textContent = String(types);
@@ -685,9 +686,9 @@ function updateBuilderStatus() {
   const pool = getFilteredPool();
   const conceptual = pool.filter((question) => question.practiceTag === 'conceptual').length;
   const coding = pool.filter((question) => question.practiceTag === 'coding').length;
-  const visual = pool.filter((question) => question.practiceTag === 'visual').length;
+  const imageRequired = pool.filter((question) => question.blockedVisual).length;
 
-  const summary = `Pool ready: ${pool.length} question${pool.length === 1 ? '' : 's'} · conceptual ${conceptual} · coding ${coding} · visual ${visual}`;
+  const summary = `Pool ready: ${pool.length} question${pool.length === 1 ? '' : 's'} · conceptual ${conceptual} · coding ${coding} · image-required ${imageRequired}`;
 
   if (dom.builderStatus) dom.builderStatus.textContent = summary;
   if (dom.homeSummaryText) dom.homeSummaryText.textContent = summary;
@@ -898,7 +899,7 @@ function buildQuestionHtml(question) {
 
   let imageBlock = '';
   if (question.blockedVisual) {
-    imageBlock = `<div class="inline-warning">This question depends on an image asset. Keep “Hide visual questions with missing assets” enabled unless the matching files are added in <code>/images</code>.</div>`;
+    imageBlock = `<div class="inline-warning">This question depends on an image asset. Keep “Hide image-required questions” enabled unless matching files are added in <code>/images</code>.</div>`;
   }
 
   const optionHtml = (question.options || [])
