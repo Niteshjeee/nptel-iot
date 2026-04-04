@@ -7,10 +7,10 @@ const APP_CONFIG = {
   contributionEmail: 'nkcbanka@gmail.com',
   socialHandle: 'niteshjeee',
   storage: {
-    profile: 'nptel_iot_profile_v6',
-    history: 'nptel_iot_history_v6',
-    settings: 'nptel_iot_settings_v6',
-    activeTest: 'nptel_iot_active_test_v6'
+    profile: 'nptel_iot_profile_v7',
+    history: 'nptel_iot_history_v7',
+    settings: 'nptel_iot_settings_v7',
+    activeTest: 'nptel_iot_active_test_v7'
   }
 };
 
@@ -28,7 +28,8 @@ const state = {
     total: 0,
     active: 0,
     blockedVisual: 0,
-    coding: 0
+    coding: 0,
+    removed: 0
   }
 };
 
@@ -125,6 +126,8 @@ init().catch((error) => {
 });
 
 async function init() {
+  applyUiFixes();
+
   if (dom.noticeText) dom.noticeText.textContent = APP_CONFIG.noticeText;
   bindEvents();
   scheduleNoticeDismiss();
@@ -148,6 +151,70 @@ async function init() {
   showPage('home');
 }
 
+function applyUiFixes() {
+  const style = document.createElement('style');
+  style.textContent = `
+    body.notice-hidden .topbar {
+      top: 0 !important;
+    }
+
+    #page-build .toggle-grid {
+      display: none !important;
+    }
+
+    #page-home .hero-actions,
+    #page-build .actions-row {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    #page-build .actions-row button:last-child {
+      grid-column: 1 / -1;
+    }
+
+    #page-test .page-card {
+      padding-bottom: 120px;
+    }
+
+    .actions-row > button,
+    .hero-actions > button {
+      min-height: 50px;
+    }
+
+    .profile-chip.simple {
+      pointer-events: none;
+      cursor: default;
+    }
+
+    @media (max-width: 719px) {
+      .quick-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .test-bottom-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .actions-row > button,
+      .hero-actions > button {
+        width: 100%;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  const eyebrowEls = document.querySelectorAll('.topbar .eyebrow');
+  eyebrowEls.forEach((el) => {
+    el.textContent = 'NPTEL IoT Practice';
+  });
+
+  if (dom.profileBtn) {
+    dom.profileBtn.setAttribute('title', 'Guest user');
+    dom.profileBtn.setAttribute('aria-label', 'Guest user');
+  }
+}
+
 function on(element, eventName, handler) {
   if (element) element.addEventListener(eventName, handler);
 }
@@ -156,6 +223,7 @@ function scheduleNoticeDismiss() {
   if (!dom.noticeBar) return;
   window.setTimeout(() => {
     dom.noticeBar.classList.add('is-hidden');
+    document.body.classList.add('notice-hidden');
   }, APP_CONFIG.noticeDurationMs);
 }
 
@@ -163,7 +231,6 @@ function bindEvents() {
   on(dom.menuToggle, 'click', openDrawer);
   on(dom.closeDrawerBtn, 'click', closeDrawer);
   on(dom.drawerBackdrop, 'click', closeDrawer);
-  on(dom.profileBtn, 'click', openDrawer);
   on(dom.quickHomeBuildBtn, 'click', () => showPage('build'));
   on(dom.quickHomeResumeBtn, 'click', () => restoreActiveTest(true));
   on(dom.testResumeBtn, 'click', () => restoreActiveTest(true));
@@ -215,7 +282,7 @@ function bindEvents() {
 }
 
 function parseDatasetFile(file) {
-  const match = String(file || '').match(/(20\d{2})_(JAN|JULY)/i);
+  const match = String(file || '').match(/(20\\d{2})_(JAN|JULY)/i);
   if (!match) return { year: null, session: null };
   return {
     year: Number(match[1]),
@@ -421,15 +488,6 @@ function normalizeQuestion(question, bank, index) {
 function hydrateProfile() {
   const saved = localStorage.getItem(APP_CONFIG.storage.profile);
   if (saved) state.profileName = saved;
-  syncProfileDom();
-}
-
-function editProfileName() {
-  const current = state.profileName === 'Guest User' ? '' : state.profileName;
-  const input = window.prompt('Enter display name', current);
-  if (input === null) return;
-  state.profileName = input.trim() || 'Guest User';
-  localStorage.setItem(APP_CONFIG.storage.profile, state.profileName);
   syncProfileDom();
 }
 
@@ -1258,7 +1316,6 @@ function copyIssueTemplate() {
   const settings = readFilterSettings();
   const template = [
     'NPTEL IoT issue report',
-    `Name: ${state.profileName}`,
     `Year: ${settings.year === 'ALL' ? '' : settings.year}`,
     `Session: ${settings.session === 'ALL' ? '' : settings.session}`,
     `Week: ${settings.week === 'ALL' ? '' : settings.week}`,
@@ -1266,7 +1323,7 @@ function copyIssueTemplate() {
     'Problem: ',
     'Expected fix: ',
     `Send to: ${APP_CONFIG.contributionEmail}`
-  ].join('\n');
+  ].join('\\n');
 
   if (navigator.clipboard?.writeText) {
     navigator.clipboard.writeText(template)
@@ -1290,7 +1347,7 @@ function openContributionMail() {
       '',
       'Details:',
       ''
-    ].join('\n')
+    ].join('\\n')
   );
   window.location.href = `mailto:${APP_CONFIG.contributionEmail}?subject=${subject}&body=${body}`;
 }
@@ -1300,7 +1357,7 @@ function copyContactDetails() {
     `Email: ${APP_CONFIG.contributionEmail}`,
     `Social handle: @${APP_CONFIG.socialHandle}`,
     'Requested session uploads: 2018 JAN / 2019 JULY'
-  ].join('\n');
+  ].join('\\n');
 
   if (navigator.clipboard?.writeText) {
     navigator.clipboard.writeText(text)
@@ -1354,7 +1411,7 @@ function formatType(value) {
   };
 
   if (map[raw]) return map[raw];
-  return raw.replaceAll('_', ' ').replace(/\b\w/g, (char) => char.toUpperCase());
+  return raw.replaceAll('_', ' ').replace(/\\b\\w/g, (char) => char.toUpperCase());
 }
 
 function formatDate(iso) {
@@ -1368,7 +1425,7 @@ function formatDate(iso) {
 function normalizeText(text) {
   return String(text || '')
     .toLowerCase()
-    .replace(/\s+/g, ' ')
+    .replace(/\\s+/g, ' ')
     .trim();
 }
 
