@@ -1,5 +1,6 @@
 const APP_CONFIG = {
-  noticeText: 'Local question files are loaded. If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee. Image-based questions stay hidden until matching assets are added in /images.',
+  noticeText:
+    'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka+nptel@gmail.com or contact @niteshjeee on telegram or instagram.',
   noticeDurationMs: 5000,
   maxTestQuestions: 50,
   manifestPath: './data/manifest.json',
@@ -7,10 +8,10 @@ const APP_CONFIG = {
   contributionEmail: 'nkcbanka@gmail.com',
   socialHandle: 'niteshjeee',
   storage: {
-    profile: 'nptel_iot_profile_v5',
-    history: 'nptel_iot_history_v5',
-    settings: 'nptel_iot_settings_v5',
-    activeTest: 'nptel_iot_active_test_v5'
+    profile: 'nptel_iot_profile_v6',
+    history: 'nptel_iot_history_v6',
+    settings: 'nptel_iot_settings_v6',
+    activeTest: 'nptel_iot_active_test_v6'
   }
 };
 
@@ -132,11 +133,11 @@ async function init() {
   loadHistory();
   await loadManifestAndBanks();
   populateFilterOptions();
+
   const hadSavedSettings = hydrateSettings();
   if (!hadSavedSettings) applyDefaultFilters();
-  populateSessionOptions();
-  populateWeekOptions();
-  clampCountSelect();
+
+  sanitizeFilters();
   saveSettings();
   updateStats();
   updateBuilderStatus();
@@ -182,11 +183,21 @@ function bindEvents() {
   on(dom.mailContributorBtn, 'click', openContributionMail);
   on(dom.copyContactBtn, 'click', copyContactDetails);
 
-  document.querySelectorAll('button[data-page]').forEach((btn) => on(btn, 'click', () => showPage(btn.dataset.page)));
-  document.querySelectorAll('[data-page-jump]').forEach((btn) => on(btn, 'click', () => showPage(btn.dataset.pageJump)));
-  document.querySelectorAll('.drawer-link').forEach((btn) => on(btn, 'click', () => showPage(btn.dataset.page)));
-  document.querySelectorAll('.bottom-link').forEach((btn) => on(btn, 'click', () => showPage(btn.dataset.page)));
-  document.querySelectorAll('[data-quick]').forEach((btn) => on(btn, 'click', () => applyQuickPreset(btn.dataset.quick)));
+  document.querySelectorAll('button[data-page]').forEach((btn) =>
+    on(btn, 'click', () => showPage(btn.dataset.page))
+  );
+  document.querySelectorAll('[data-page-jump]').forEach((btn) =>
+    on(btn, 'click', () => showPage(btn.dataset.pageJump))
+  );
+  document.querySelectorAll('.drawer-link').forEach((btn) =>
+    on(btn, 'click', () => showPage(btn.dataset.page))
+  );
+  document.querySelectorAll('.bottom-link').forEach((btn) =>
+    on(btn, 'click', () => showPage(btn.dataset.page))
+  );
+  document.querySelectorAll('[data-quick]').forEach((btn) =>
+    on(btn, 'click', () => applyQuickPreset(btn.dataset.quick))
+  );
 
   [
     dom.yearSelect,
@@ -202,36 +213,129 @@ function bindEvents() {
     dom.shuffleOptionsToggle,
     dom.showSolutionsToggle,
     dom.showReferenceToggle
-  ].filter(Boolean).forEach((el) => {
-    const eventName = el.tagName === 'INPUT' && el.type === 'text' ? 'input' : 'change';
-    on(el, eventName, onFilterChange);
-  });
+  ]
+    .filter(Boolean)
+    .forEach((el) => {
+      const eventName = el.tagName === 'INPUT' && el.type === 'text' ? 'input' : 'change';
+      on(el, eventName, onFilterChange);
+    });
+}
+
+function parseDatasetFile(file) {
+  const match = String(file || '').match(/(20\d{2})_(JAN|JULY)/i);
+  if (!match) return { year: null, session: null };
+  return {
+    year: Number(match[1]),
+    session: match[2].toUpperCase()
+  };
+}
+
+function optionValues(select) {
+  return select ? [...select.options].map((option) => option.value) : [];
+}
+
+function setSelectValueSafely(select, value, fallback = 'ALL') {
+  if (!select) return;
+  const values = optionValues(select);
+  const target = String(value ?? '');
+  if (values.includes(target)) {
+    select.value = target;
+    return;
+  }
+  if (values.includes(String(fallback))) {
+    select.value = String(fallback);
+    return;
+  }
+  select.value = values[0] || '';
+}
+
+function sanitizeFilters() {
+  const datasets = sortDatasets(state.manifest?.datasets || []);
+  const latest = datasets[0] || null;
+
+  setSelectValueSafely(dom.yearSelect, dom.yearSelect?.value, latest ? String(latest.year) : 'ALL');
+  populateSessionOptions();
+  setSelectValueSafely(dom.sessionSelect, dom.sessionSelect?.value, 'ALL');
+  populateWeekOptions();
+  setSelectValueSafely(dom.weekSelect, dom.weekSelect?.value, 'ALL');
+  setSelectValueSafely(dom.typeSelect, dom.typeSelect?.value, 'ALL');
+  setSelectValueSafely(dom.practiceSelect, dom.practiceSelect?.value, 'ALL');
+
+  if (dom.countSelect) {
+    const countOptions = optionValues(dom.countSelect);
+    const raw = Math.min(Number(dom.countSelect.value || 15), APP_CONFIG.maxTestQuestions);
+    const fallback = countOptions.includes('15') ? '15' : countOptions[0] || '15';
+    setSelectValueSafely(dom.countSelect, String(raw || 15), fallback);
+  }
+
+  if (dom.searchInput && typeof dom.searchInput.value !== 'string') {
+    dom.searchInput.value = '';
+  }
+}
+
+function getDatasetRuntimeSummary(dataset) {
+  const file = typeof dataset === 'string' ? dataset : dataset.file;
+  const questions = state.allQuestions.filter((question) => question.sourceFile === file);
+
+  const total = questions.length;
+  const removed = questions.filter((question) => Boolean(question.removed)).length;
+  const imageRequired = questions.filter((question) => Boolean(question.blockedVisual)).length;
+  const ready = questions.filter((question) => !question.removed && !question.blockedVisual).length;
+  const coding = questions.filter((question) => !question.removed && question.practiceTag === 'coding').length;
+  const conceptual = questions.filter(
+    (question) => !question.removed && question.practiceTag === 'conceptual'
+  ).length;
+
+  return { total, removed, imageRequired, ready, coding, conceptual };
 }
 
 async function loadManifestAndBanks() {
   const manifestRes = await fetch(APP_CONFIG.manifestPath, { cache: 'no-cache' });
   if (!manifestRes.ok) throw new Error('Failed to load data/manifest.json');
-  state.manifest = await manifestRes.json();
 
-  const banks = await Promise.all(state.manifest.datasets.map(async (dataset) => {
-    const path = `./data/${dataset.file}`;
-    const res = await fetch(path, { cache: 'no-cache' });
-    if (!res.ok) throw new Error(`Failed to load ${dataset.file}`);
-    const bank = await res.json();
+  const rawManifest = await manifestRes.json();
+  const resolvedDatasets = (rawManifest.datasets || []).map((dataset) => {
+    const derived = parseDatasetFile(dataset.file);
     return {
-      ...bank,
-      year: dataset.year,
-      session: dataset.session,
-      file: dataset.file,
-      slug: dataset.slug,
-      title: buildDatasetTitle(dataset),
-      summary: dataset.summary
+      ...dataset,
+      year: derived.year ?? dataset.year,
+      session: derived.session ?? dataset.session
     };
-  }));
+  });
+
+  state.manifest = {
+    ...rawManifest,
+    datasets: resolvedDatasets
+  };
+
+  const banks = await Promise.all(
+    resolvedDatasets.map(async (dataset) => {
+      const path = `./data/${dataset.file}`;
+      const res = await fetch(path, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`Failed to load ${dataset.file}`);
+
+      const bank = await res.json();
+      return {
+        ...bank,
+        year: dataset.year,
+        session: dataset.session,
+        file: dataset.file,
+        slug: dataset.slug,
+        title: buildDatasetTitle(dataset),
+        summary: dataset.summary || {}
+      };
+    })
+  );
 
   state.banks = banks;
-  state.allQuestions = banks.flatMap((bank) => bank.questions.map((question, index) => normalizeQuestion(question, bank, index)));
-  state.years = [...new Set(state.manifest.datasets.map((dataset) => dataset.year))].sort((a, b) => a - b);
+  state.allQuestions = banks.flatMap((bank) =>
+    (bank.questions || []).map((question, index) => normalizeQuestion(question, bank, index))
+  );
+
+  state.years = [...new Set(state.manifest.datasets.map((dataset) => dataset.year))]
+    .filter((value) => value !== null && value !== undefined)
+    .sort((a, b) => a - b);
+
   state.varieties = [...new Set(state.allQuestions.map((question) => question.varietyTag))].sort();
 
   if (dom.datasetBadge) dom.datasetBadge.textContent = `${banks.length} files · ${state.allQuestions.length} questions`;
@@ -244,31 +348,64 @@ function normalizeQuestion(question, bank, index) {
   const answerTexts = Array.isArray(question.answer?.text) ? question.answer.text.map(String) : [];
   const options = Array.isArray(question.options) ? question.options : [];
   const image = question.image || null;
+
+  const year = question.year ?? bank.year;
+  const session = (question.session ?? bank.session ?? '').toString().toUpperCase();
+  const week = question.week ?? null;
+  const responseMode = question.response_mode || 'single_select';
+  const practiceTag = question.practice_tag || (question.type === 'code_based' ? 'coding' : 'conceptual');
+  const varietyTag = question.variety_tag || question.type || 'mcq';
+
+  const isActuallyVisual = Boolean(
+    question.image_required === true ||
+      question.needs_image === true ||
+      question.type === 'image_based' ||
+      practiceTag === 'visual' ||
+      varietyTag === 'visual' ||
+      /visual/i.test(String(responseMode))
+  );
+
   return {
     ...question,
+    year,
+    session,
+    week,
     runtimeIndex: index,
     bankTitle: bank.title,
     bankSlug: bank.slug,
     sourceFile: bank.file,
     answerKeys,
     answerTexts,
-    answerDisplay: question.answer_display || (answerTexts.length ? answerTexts.join(', ') : answerKeys.join(', ')),
-    varietyTag: question.variety_tag || question.type || 'mcq',
-    practiceTag: question.practice_tag || (question.type === 'code_based' ? 'coding' : 'conceptual'),
-    responseMode: question.response_mode || 'single_select',
+    answerDisplay:
+      question.answer_display || (answerTexts.length ? answerTexts.join(', ') : answerKeys.join(', ')),
+    varietyTag,
+    practiceTag,
+    responseMode,
     image,
-    imageResolved: false,
-    blockedVisual: Boolean(question.has_image || question.image_required || question.needs_image || question.type === 'image_based'),
-    searchBlob: normalizeText([
-      question.question,
-      question.code_block,
-      question.detailed_solution,
-      question.reference,
-      question.answer_display,
-      question.practice_tag,
-      question.variety_tag,
-      ...(options.map((option) => option.text))
-    ].filter(Boolean).join(' '))
+    imageResolved: !isActuallyVisual,
+    blockedVisual: isActuallyVisual,
+    searchBlob: normalizeText(
+      [
+        question.uid,
+        question.id,
+        question.display_no,
+        question.question,
+        question.code_block,
+        question.detailed_solution,
+        question.reference,
+        question.answer_display,
+        practiceTag,
+        varietyTag,
+        bank.title,
+        bank.file,
+        year,
+        session,
+        week,
+        ...(options.map((option) => option.text))
+      ]
+        .filter(Boolean)
+        .join(' ')
+    )
   };
 }
 
@@ -319,19 +456,35 @@ function hydrateSettings() {
   try {
     const settings = JSON.parse(localStorage.getItem(APP_CONFIG.storage.settings) || '{}');
     const hasSaved = Object.keys(settings).length > 0;
+
     if (settings.year && dom.yearSelect) dom.yearSelect.value = settings.year;
     if (settings.session && dom.sessionSelect) dom.sessionSelect.value = settings.session;
     if (settings.week && dom.weekSelect) dom.weekSelect.value = settings.week;
     if (settings.type && dom.typeSelect) dom.typeSelect.value = settings.type;
     if (settings.practice && dom.practiceSelect) dom.practiceSelect.value = settings.practice;
-    if (settings.count && dom.countSelect) dom.countSelect.value = String(Math.min(Number(settings.count), APP_CONFIG.maxTestQuestions));
+    if (settings.count && dom.countSelect) {
+      dom.countSelect.value = String(Math.min(Number(settings.count), APP_CONFIG.maxTestQuestions));
+    }
     if (typeof settings.search === 'string' && dom.searchInput) dom.searchInput.value = settings.search;
-    if (typeof settings.hideRemoved === 'boolean' && dom.hideRemovedToggle) dom.hideRemovedToggle.checked = settings.hideRemoved;
-    if (typeof settings.hideImagePending === 'boolean' && dom.hideImagePendingToggle) dom.hideImagePendingToggle.checked = settings.hideImagePending;
-    if (typeof settings.shuffleQuestions === 'boolean' && dom.shuffleQuestionsToggle) dom.shuffleQuestionsToggle.checked = settings.shuffleQuestions;
-    if (typeof settings.shuffleOptions === 'boolean' && dom.shuffleOptionsToggle) dom.shuffleOptionsToggle.checked = settings.shuffleOptions;
-    if (typeof settings.showSolutions === 'boolean' && dom.showSolutionsToggle) dom.showSolutionsToggle.checked = settings.showSolutions;
-    if (typeof settings.showReference === 'boolean' && dom.showReferenceToggle) dom.showReferenceToggle.checked = settings.showReference;
+    if (typeof settings.hideRemoved === 'boolean' && dom.hideRemovedToggle) {
+      dom.hideRemovedToggle.checked = settings.hideRemoved;
+    }
+    if (typeof settings.hideImagePending === 'boolean' && dom.hideImagePendingToggle) {
+      dom.hideImagePendingToggle.checked = settings.hideImagePending;
+    }
+    if (typeof settings.shuffleQuestions === 'boolean' && dom.shuffleQuestionsToggle) {
+      dom.shuffleQuestionsToggle.checked = settings.shuffleQuestions;
+    }
+    if (typeof settings.shuffleOptions === 'boolean' && dom.shuffleOptionsToggle) {
+      dom.shuffleOptionsToggle.checked = settings.shuffleOptions;
+    }
+    if (typeof settings.showSolutions === 'boolean' && dom.showSolutionsToggle) {
+      dom.showSolutionsToggle.checked = settings.showSolutions;
+    }
+    if (typeof settings.showReference === 'boolean' && dom.showReferenceToggle) {
+      dom.showReferenceToggle.checked = settings.showReference;
+    }
+
     return hasSaved;
   } catch {
     return false;
@@ -347,6 +500,7 @@ function applyDefaultFilters() {
   populateSessionOptions();
   if (dom.sessionSelect) dom.sessionSelect.value = latest.session;
   populateWeekOptions();
+
   if (dom.weekSelect) dom.weekSelect.value = 'ALL';
   if (dom.typeSelect) dom.typeSelect.value = 'ALL';
   if (dom.practiceSelect) dom.practiceSelect.value = 'ALL';
@@ -391,27 +545,43 @@ function populateFilterOptions() {
 
 function populateSessionOptions() {
   const year = dom.yearSelect?.value || 'ALL';
-  const sessions = [...new Set((state.manifest?.datasets || [])
-    .filter((dataset) => year === 'ALL' || String(dataset.year) === year)
-    .map((dataset) => dataset.session))]
-    .sort((a, b) => sessionRank(a) - sessionRank(b));
+  const sessions = [
+    ...new Set(
+      (state.manifest?.datasets || [])
+        .filter((dataset) => year === 'ALL' || String(dataset.year) === year)
+        .map((dataset) => dataset.session)
+    )
+  ].sort((a, b) => sessionRank(a) - sessionRank(b));
+
   populateSelect(dom.sessionSelect, sessions, 'ALL', 'All sessions', formatSession);
 }
 
 function populateWeekOptions() {
   const year = dom.yearSelect?.value || 'ALL';
   const session = dom.sessionSelect?.value || 'ALL';
-  const weeks = [...new Set(state.allQuestions
-    .filter((question) => (year === 'ALL' || String(question.year) === year) && (session === 'ALL' || question.session === session))
-    .map((question) => question.week))]
-    .sort((a, b) => Number(a) - Number(b));
+
+  const weeks = [
+    ...new Set(
+      state.allQuestions
+        .filter(
+          (question) =>
+            (year === 'ALL' || String(question.year) === year) &&
+            (session === 'ALL' || question.session === session)
+        )
+        .map((question) => question.week)
+        .filter((week) => week !== null && week !== undefined && String(week).trim() !== '')
+    )
+  ].sort((a, b) => Number(a) - Number(b));
+
   populateSelect(dom.weekSelect, weeks, 'ALL', 'All weeks', (value) => `Week ${value}`);
 }
 
 function populateSelect(select, values, allValue, allLabel, formatter = formatType) {
   if (!select) return;
+
   const current = select.value || allValue;
   select.innerHTML = '';
+
   const allOption = document.createElement('option');
   allOption.value = allValue;
   allOption.textContent = allLabel;
@@ -442,7 +612,12 @@ function onFilterChange(event) {
     populateSessionOptions();
     populateWeekOptions();
   }
-  if (event?.target?.id === 'sessionSelect') populateWeekOptions();
+
+  if (event?.target?.id === 'sessionSelect') {
+    populateWeekOptions();
+  }
+
+  sanitizeFilters();
   clampCountSelect();
   saveSettings();
   updateBuilderStatus();
@@ -453,9 +628,14 @@ function onFilterChange(event) {
 function applyQuickPreset(key) {
   const latestJan = getLatestDatasetBySession('JAN');
   const latestJuly = getLatestDatasetBySession('JULY');
+
   const preset = {
-    'latest-jan': latestJan ? { year: String(latestJan.year), session: latestJan.session, practice: 'ALL', type: 'ALL' } : null,
-    'latest-july': latestJuly ? { year: String(latestJuly.year), session: latestJuly.session, practice: 'ALL', type: 'ALL' } : null,
+    'latest-jan': latestJan
+      ? { year: String(latestJan.year), session: latestJan.session, practice: 'ALL', type: 'ALL' }
+      : null,
+    'latest-july': latestJuly
+      ? { year: String(latestJuly.year), session: latestJuly.session, practice: 'ALL', type: 'ALL' }
+      : null,
     'mixed-2025': { year: '2025', session: 'ALL', practice: 'ALL', type: 'ALL' },
     'all-years': { year: 'ALL', session: 'ALL', practice: 'ALL', type: 'ALL' },
     code: { year: 'ALL', session: 'ALL', practice: 'coding', type: 'ALL' },
@@ -471,6 +651,8 @@ function applyQuickPreset(key) {
   dom.weekSelect.value = 'ALL';
   dom.practiceSelect.value = preset.practice;
   dom.typeSelect.value = preset.type;
+
+  sanitizeFilters();
   saveSettings();
   updateBuilderStatus();
   showPage('build');
@@ -480,11 +662,14 @@ function updateStats() {
   const total = state.allQuestions.length;
   const active = state.allQuestions.filter((question) => !question.removed && !question.blockedVisual).length;
   const visualBlocked = state.allQuestions.filter((question) => question.blockedVisual).length;
-  const coding = state.allQuestions.filter((question) => question.practiceTag === 'coding').length;
+  const coding = state.allQuestions.filter(
+    (question) => !question.removed && question.practiceTag === 'coding'
+  ).length;
   const years = new Set(state.allQuestions.map((question) => question.year)).size;
   const types = new Set(state.allQuestions.map((question) => question.varietyTag)).size;
 
   state.summary = { total, active, blockedVisual: visualBlocked, coding };
+
   if (dom.totalQuestionsStat) dom.totalQuestionsStat.textContent = String(total);
   if (dom.usableQuestionsStat) dom.usableQuestionsStat.textContent = String(active);
   if (dom.imagePendingStat) dom.imagePendingStat.textContent = String(visualBlocked);
@@ -501,9 +686,13 @@ function updateBuilderStatus() {
   const conceptual = pool.filter((question) => question.practiceTag === 'conceptual').length;
   const coding = pool.filter((question) => question.practiceTag === 'coding').length;
   const visual = pool.filter((question) => question.practiceTag === 'visual').length;
+
   const summary = `Pool ready: ${pool.length} question${pool.length === 1 ? '' : 's'} · conceptual ${conceptual} · coding ${coding} · visual ${visual}`;
+
   if (dom.builderStatus) dom.builderStatus.textContent = summary;
   if (dom.homeSummaryText) dom.homeSummaryText.textContent = summary;
+  if (dom.startTestBtn) dom.startTestBtn.disabled = pool.length === 0;
+
   if (dom.currentPageBadge && ['home', 'build'].includes(state.currentPage)) {
     dom.currentPageBadge.textContent = pool.length ? `${pool.length} ready` : 'No match';
   }
@@ -525,18 +714,20 @@ function renderDatasetsPage() {
 }
 
 function buildDatasetCard(dataset, compact = false) {
-  const readyNoImages = Math.max(0, Number(dataset.summary.active_questions || 0) - Number(dataset.summary.visual_questions || 0));
-  const blocked = Number(dataset.summary.visual_questions || 0);
+  const runtime = getDatasetRuntimeSummary(dataset);
+  const readyNoImages = runtime.ready;
+  const blocked = runtime.imageRequired;
+
   const metaBits = compact
     ? [
         `<span class="badge subtle">${readyNoImages} ready</span>`,
-        `<span class="badge subtle">${dataset.summary.coding_questions} coding</span>`
+        `<span class="badge subtle">${runtime.coding} coding</span>`
       ]
     : [
-        `<span class="badge subtle">${dataset.summary.total_questions} total</span>`,
+        `<span class="badge subtle">${runtime.total} total</span>`,
         `<span class="badge subtle">${readyNoImages} ready</span>`,
-        `<span class="badge subtle">${dataset.summary.coding_questions} coding</span>`,
-        `<span class="badge subtle">${blocked} need images</span>`
+        `<span class="badge subtle">${runtime.coding} coding</span>`,
+        `<span class="badge subtle">${blocked} image-required</span>`
       ];
 
   return `
@@ -544,7 +735,11 @@ function buildDatasetCard(dataset, compact = false) {
       <div class="dataset-top-row">
         <div>
           <h4>${escapeHtml(buildDatasetTitle(dataset))}</h4>
-          ${compact ? `<div class="muted small-text">Available in this build</div>` : `<div class="muted small-text">${escapeHtml(dataset.file)}</div>`}
+          ${
+            compact
+              ? `<div class="muted small-text">Available in this build</div>`
+              : `<div class="muted small-text">${escapeHtml(dataset.file)}</div>`
+          }
         </div>
         <button class="ghost-btn small-btn" type="button" data-use-year="${dataset.year}" data-use-session="${escapeHtml(dataset.session)}">Use</button>
       </div>
@@ -568,6 +763,8 @@ function applyDatasetSelection(year, session) {
   dom.sessionSelect.value = session;
   populateWeekOptions();
   dom.weekSelect.value = 'ALL';
+
+  sanitizeFilters();
   saveSettings();
   updateBuilderStatus();
   showPage('build');
@@ -576,12 +773,13 @@ function applyDatasetSelection(year, session) {
 function getFilteredPool() {
   const settings = readFilterSettings();
   const search = normalizeText(settings.search);
+
   return state.allQuestions.filter((question) => {
-    if (settings.year !== 'ALL' && String(question.year) !== settings.year) return false;
-    if (settings.session !== 'ALL' && question.session !== settings.session) return false;
-    if (settings.week !== 'ALL' && String(question.week) !== settings.week) return false;
-    if (settings.type !== 'ALL' && question.varietyTag !== settings.type) return false;
-    if (settings.practice !== 'ALL' && question.practiceTag !== settings.practice) return false;
+    if (settings.year !== 'ALL' && String(question.year) !== String(settings.year)) return false;
+    if (settings.session !== 'ALL' && String(question.session) !== String(settings.session)) return false;
+    if (settings.week !== 'ALL' && String(question.week) !== String(settings.week)) return false;
+    if (settings.type !== 'ALL' && String(question.varietyTag) !== String(settings.type)) return false;
+    if (settings.practice !== 'ALL' && String(question.practiceTag) !== String(settings.practice)) return false;
     if (settings.hideRemoved && question.removed) return false;
     if (settings.hideImagePending && question.blockedVisual) return false;
     if (search && !question.searchBlob.includes(search)) return false;
@@ -592,11 +790,14 @@ function getFilteredPool() {
 function startTest() {
   const settings = readFilterSettings();
   let pool = getFilteredPool();
+
   if (!pool.length) {
     window.alert('No questions match the current filters.');
     return;
   }
+
   if (settings.shuffleQuestions) pool = shuffle([...pool]);
+
   const count = Math.min(Number(settings.count) || 15, APP_CONFIG.maxTestQuestions, pool.length);
   const selected = pool.slice(0, count).map((question) => ({
     ...question,
@@ -662,16 +863,20 @@ function renderActiveTest() {
   }
 
   toggleTestEmptyState(false);
+
   const total = state.activeTest.questions.length;
   const answered = Object.values(state.activeTest.answers).filter(hasAnswer).length;
   const current = state.activeTest.questions[state.activeTest.currentIndex];
 
   if (dom.testTitle) dom.testTitle.textContent = state.activeTest.title;
-  if (dom.testMeta) dom.testMeta.textContent = `${current.year} ${formatSession(current.session)} · ${current.week_label || `Week ${current.week}`} · ${formatType(current.varietyTag)} · ${formatType(current.practiceTag)}`;
+  if (dom.testMeta) {
+    dom.testMeta.textContent = `${current.year} ${formatSession(current.session)} · ${current.week_label || `Week ${current.week}`} · ${formatType(current.varietyTag)} · ${formatType(current.practiceTag)}`;
+  }
   if (dom.progressChip) dom.progressChip.textContent = `${state.activeTest.currentIndex + 1} / ${total}`;
   if (dom.answeredCountBadge) dom.answeredCountBadge.textContent = `${answered} answered`;
   if (dom.progressBar) dom.progressBar.style.width = `${((state.activeTest.currentIndex + 1) / total) * 100}%`;
   if (dom.questionCard) dom.questionCard.innerHTML = buildQuestionHtml(current);
+
   bindQuestionOptionEvents(current);
   bindSwipeEvents();
   renderQuestionPalette();
@@ -696,33 +901,46 @@ function buildQuestionHtml(question) {
     imageBlock = `<div class="inline-warning">This question depends on an image asset. Keep “Hide visual questions with missing assets” enabled unless the matching files are added in <code>/images</code>.</div>`;
   }
 
-  const optionHtml = (question.options || []).map((option) => {
-    const isSelected = String(selectedValue) === String(option.key);
-    const isCorrect = question.answerKeys.includes(String(option.key));
-    const classes = ['option-btn'];
-    if (isSelected) classes.push('selected');
-    if (shouldReveal && isCorrect) classes.push('correct');
-    if (shouldReveal && isSelected && !isCorrect) classes.push('wrong');
+  const optionHtml = (question.options || [])
+    .map((option) => {
+      const isSelected = String(selectedValue) === String(option.key);
+      const isCorrect = question.answerKeys.includes(String(option.key));
+      const classes = ['option-btn'];
 
-    return `
+      if (isSelected) classes.push('selected');
+      if (shouldReveal && isCorrect) classes.push('correct');
+      if (shouldReveal && isSelected && !isCorrect) classes.push('wrong');
+
+      return `
       <button class="${classes.join(' ')}" type="button" data-option-key="${escapeHtml(option.key)}" ${checked ? 'disabled' : ''}>
         <span class="option-key">${escapeHtml(String(option.key).toUpperCase())}</span>
         <span>${escapeHtml(option.text || '')}</span>
       </button>
     `;
-  }).join('');
+    })
+    .join('');
 
-  const solutionActionBlock = solutionModeEnabled ? `
+  const solutionActionBlock = solutionModeEnabled
+    ? `
     <div class="question-action-row">
       ${canCheckSolution ? `<button class="primary-btn small-btn" type="button" data-check-solution="${escapeHtml(question.id)}">Check solution</button>` : ''}
       ${!checked && hasAnswer(selectedValue) ? `<button class="ghost-btn small-btn" type="button" data-clear-answer="${escapeHtml(question.id)}">Clear answer</button>` : ''}
       ${checked ? `<span class="inline-state-pill">Solution checked</span>` : ''}
     </div>
-  ` : '';
+  `
+    : '';
 
-  const answerBlock = shouldReveal ? `<div class="inline-answer"><strong>Correct answer:</strong> ${escapeHtml(question.answerDisplay || '—')}</div>` : '';
-  const referenceBlock = state.activeTest.settings.showReference && question.reference ? `<div class="inline-reference"><strong>Reference:</strong> ${escapeHtml(question.reference)}</div>` : '';
-  const solutionBlock = shouldReveal && question.detailed_solution ? `<div class="inline-reference"><strong>Explanation:</strong> ${escapeHtml(question.detailed_solution)}</div>` : '';
+  const answerBlock = shouldReveal
+    ? `<div class="inline-answer"><strong>Correct answer:</strong> ${escapeHtml(question.answerDisplay || '—')}</div>`
+    : '';
+  const referenceBlock =
+    state.activeTest.settings.showReference && question.reference
+      ? `<div class="inline-reference"><strong>Reference:</strong> ${escapeHtml(question.reference)}</div>`
+      : '';
+  const solutionBlock =
+    shouldReveal && question.detailed_solution
+      ? `<div class="inline-reference"><strong>Explanation:</strong> ${escapeHtml(question.detailed_solution)}</div>`
+      : '';
 
   return `
     <div class="question-meta">
@@ -753,11 +971,14 @@ function bindQuestionOptionEvents(question) {
 }
 
 let touchStartX = null;
+
 function bindSwipeEvents() {
   if (!dom.questionCard) return;
+
   dom.questionCard.ontouchstart = (event) => {
     touchStartX = event.changedTouches[0].screenX;
   };
+
   dom.questionCard.ontouchend = (event) => {
     if (touchStartX === null) return;
     const diff = event.changedTouches[0].screenX - touchStartX;
@@ -782,6 +1003,7 @@ function checkSolution(questionId) {
   const currentQuestion = state.activeTest.questions.find((item) => item.id === questionId);
   if (!currentQuestion) return;
   if (!hasAnswer(state.activeTest.answers[questionId])) return;
+
   state.activeTest.checked[questionId] = true;
   persistActiveTest();
   renderActiveTest();
@@ -798,7 +1020,10 @@ function clearAnswer(questionId) {
 function moveQuestion(delta) {
   if (!state.activeTest) return;
   const total = state.activeTest.questions.length;
-  state.activeTest.currentIndex = Math.max(0, Math.min(total - 1, state.activeTest.currentIndex + delta));
+  state.activeTest.currentIndex = Math.max(
+    0,
+    Math.min(total - 1, state.activeTest.currentIndex + delta)
+  );
   persistActiveTest();
   renderActiveTest();
 }
@@ -812,12 +1037,16 @@ function jumpToQuestion(index) {
 
 function renderQuestionPalette() {
   if (!state.activeTest || !dom.questionPalette) return;
-  dom.questionPalette.innerHTML = state.activeTest.questions.map((question, index) => {
-    const classes = ['palette-btn'];
-    if (index === state.activeTest.currentIndex) classes.push('current');
-    if (hasAnswer(state.activeTest.answers[question.id])) classes.push('answered');
-    return `<button class="${classes.join(' ')}" type="button" data-jump-index="${index}">${index + 1}</button>`;
-  }).join('');
+
+  dom.questionPalette.innerHTML = state.activeTest.questions
+    .map((question, index) => {
+      const classes = ['palette-btn'];
+      if (index === state.activeTest.currentIndex) classes.push('current');
+      if (hasAnswer(state.activeTest.answers[question.id])) classes.push('answered');
+      return `<button class="${classes.join(' ')}" type="button" data-jump-index="${index}">${index + 1}</button>`;
+    })
+    .join('');
+
   dom.questionPalette.querySelectorAll('[data-jump-index]').forEach((button) => {
     on(button, 'click', () => jumpToQuestion(Number(button.dataset.jumpIndex)));
   });
@@ -829,13 +1058,16 @@ function hasAnswer(value) {
 
 function submitTest() {
   if (!state.activeTest) return;
+
   const scored = state.activeTest.questions.map((question) => {
     const selected = state.activeTest.answers[question.id] || '';
     const correct = question.answerKeys.includes(String(selected));
     return { question, selected, correct };
   });
 
-  const score = scored.filter((item) => item.correct).reduce((sum, item) => sum + (item.question.marks || 1), 0);
+  const score = scored
+    .filter((item) => item.correct)
+    .reduce((sum, item) => sum + (item.question.marks || 1), 0);
   const total = scored.reduce((sum, item) => sum + (item.question.marks || 1), 0);
   const percent = total ? Math.round((score / total) * 100) : 0;
 
@@ -886,6 +1118,7 @@ function renderResults(record) {
 
   dom.resultsPanel?.classList.remove('hidden');
   dom.resultsEmptyState?.classList.add('hidden');
+
   if (dom.scoreBadge) dom.scoreBadge.textContent = `${record.score} / ${record.total}`;
 
   if (dom.resultsSummary) {
@@ -897,7 +1130,9 @@ function renderResults(record) {
   }
 
   if (dom.reviewList) {
-    dom.reviewList.innerHTML = record.review.map((item) => `
+    dom.reviewList.innerHTML = record.review
+      .map(
+        (item) => `
       <article class="review-item">
         <h4>${escapeHtml(item.questionLabel)} · ${escapeHtml(formatType(item.varietyTag))} · ${escapeHtml(formatType(item.practiceTag))}</h4>
         <div class="muted">${escapeHtml(item.question)}</div>
@@ -910,7 +1145,9 @@ function renderResults(record) {
           ${item.reference ? `<div class="answer-line"><strong>Reference:</strong> ${escapeHtml(item.reference)}</div>` : ''}
         </div>
       </article>
-    `).join('');
+    `
+      )
+      .join('');
   }
 }
 
@@ -919,7 +1156,9 @@ function renderResultsFromLastAttempt() {
 }
 
 function renderHistory() {
-  if (dom.historyBadge) dom.historyBadge.textContent = `${state.history.length} attempt${state.history.length === 1 ? '' : 's'}`;
+  if (dom.historyBadge) {
+    dom.historyBadge.textContent = `${state.history.length} attempt${state.history.length === 1 ? '' : 's'}`;
+  }
   if (!dom.historyList) return;
 
   if (!state.history.length) {
@@ -927,7 +1166,9 @@ function renderHistory() {
     return;
   }
 
-  dom.historyList.innerHTML = state.history.map((entry) => `
+  dom.historyList.innerHTML = state.history
+    .map(
+      (entry) => `
     <article class="history-item">
       <h4>${escapeHtml(entry.title)}</h4>
       <div class="muted">${formatDate(entry.submittedAt)} · ${entry.score}/${entry.total} · ${entry.percent}%</div>
@@ -935,7 +1176,9 @@ function renderHistory() {
         <button class="secondary-btn" type="button" data-history-open="${entry.id}">Open review</button>
       </div>
     </article>
-  `).join('');
+  `
+    )
+    .join('');
 
   dom.historyList.querySelectorAll('[data-history-open]').forEach((button) => {
     on(button, 'click', () => {
@@ -967,18 +1210,35 @@ function closeDrawer() {
 
 function showPage(page) {
   state.currentPage = page;
-  document.querySelectorAll('.app-page').forEach((section) => section.classList.toggle('active', section.dataset.page === page));
-  document.querySelectorAll('.drawer-link').forEach((button) => button.classList.toggle('active', button.dataset.page === page));
-  document.querySelectorAll('.bottom-link').forEach((button) => button.classList.toggle('active', button.dataset.page === page));
+
+  document.querySelectorAll('.app-page').forEach((section) =>
+    section.classList.toggle('active', section.dataset.page === page)
+  );
+  document.querySelectorAll('.drawer-link').forEach((button) =>
+    button.classList.toggle('active', button.dataset.page === page)
+  );
+  document.querySelectorAll('.bottom-link').forEach((button) =>
+    button.classList.toggle('active', button.dataset.page === page)
+  );
+
   if (dom.currentPageTitle) dom.currentPageTitle.textContent = pageTitles[page] || 'NPTEL IoT';
 
   if (dom.currentPageBadge) {
-    if (page === 'test') dom.currentPageBadge.textContent = state.activeTest ? `${state.activeTest.currentIndex + 1}/${state.activeTest.questions.length}` : 'No active test';
-    else if (page === 'results' && state.history[0]) dom.currentPageBadge.textContent = `${state.history[0].percent}%`;
-    else if (page === 'history') dom.currentPageBadge.textContent = `${state.history.length} saved`;
-    else if (page === 'datasets') dom.currentPageBadge.textContent = `${state.banks.length} files`;
-    else if (page === 'contact') dom.currentPageBadge.textContent = 'Support';
-    else updateBuilderStatus();
+    if (page === 'test') {
+      dom.currentPageBadge.textContent = state.activeTest
+        ? `${state.activeTest.currentIndex + 1}/${state.activeTest.questions.length}`
+        : 'No active test';
+    } else if (page === 'results' && state.history[0]) {
+      dom.currentPageBadge.textContent = `${state.history[0].percent}%`;
+    } else if (page === 'history') {
+      dom.currentPageBadge.textContent = `${state.history.length} saved`;
+    } else if (page === 'datasets') {
+      dom.currentPageBadge.textContent = `${state.banks.length} files`;
+    } else if (page === 'contact') {
+      dom.currentPageBadge.textContent = 'Support';
+    } else {
+      updateBuilderStatus();
+    }
   }
 
   closeDrawer();
@@ -1010,17 +1270,19 @@ function copyIssueTemplate() {
 
 function openContributionMail() {
   const subject = encodeURIComponent('NPTEL IoT missing session / correction');
-  const body = encodeURIComponent([
-    'Hello,',
-    '',
-    'I want to share a missing session, correction, or dataset feedback.',
-    '',
-    'Available missing session:',
-    '- 2018 JAN / 2019 JULY',
-    '',
-    'Details:',
-    ''
-  ].join('\n'));
+  const body = encodeURIComponent(
+    [
+      'Hello,',
+      '',
+      'I want to share a missing session, correction, or dataset feedback.',
+      '',
+      'Available missing session:',
+      '- 2018 JAN / 2019 JULY',
+      '',
+      'Details:',
+      ''
+    ].join('\n')
+  );
   window.location.href = `mailto:${APP_CONFIG.contributionEmail}?subject=${subject}&body=${body}`;
 }
 
@@ -1072,6 +1334,7 @@ function formatSession(value) {
 function formatType(value) {
   const raw = String(value || '');
   if (!raw) return '';
+
   const map = {
     true_false: 'True / False',
     fill_blank: 'Fill Blank',
@@ -1080,6 +1343,7 @@ function formatType(value) {
     multi_select: 'Multi Select',
     mcq: 'MCQ'
   };
+
   if (map[raw]) return map[raw];
   return raw.replaceAll('_', ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 }
@@ -1093,7 +1357,10 @@ function formatDate(iso) {
 }
 
 function normalizeText(text) {
-  return String(text || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  return String(text || '')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function shuffle(items) {
