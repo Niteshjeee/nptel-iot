@@ -1,6 +1,5 @@
 const APP_CONFIG = {
-  noticeText:
-    'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee.',
+  noticeText: 'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee',
   noticeDurationMs: 5000,
   maxTestQuestions: 50,
   manifestPath: './data/manifest.json',
@@ -164,7 +163,7 @@ function bindEvents() {
   on(dom.menuToggle, 'click', openDrawer);
   on(dom.closeDrawerBtn, 'click', closeDrawer);
   on(dom.drawerBackdrop, 'click', closeDrawer);
-  on(dom.profileBtn, 'click', editProfileName);
+  on(dom.profileBtn, 'click', openDrawer);
   on(dom.quickHomeBuildBtn, 'click', () => showPage('build'));
   on(dom.quickHomeResumeBtn, 'click', () => restoreActiveTest(true));
   on(dom.testResumeBtn, 'click', () => restoreActiveTest(true));
@@ -206,13 +205,7 @@ function bindEvents() {
     dom.typeSelect,
     dom.practiceSelect,
     dom.countSelect,
-    dom.searchInput,
-    dom.hideRemovedToggle,
-    dom.hideImagePendingToggle,
-    dom.shuffleQuestionsToggle,
-    dom.shuffleOptionsToggle,
-    dom.showSolutionsToggle,
-    dom.showReferenceToggle
+    dom.searchInput
   ]
     .filter(Boolean)
     .forEach((el) => {
@@ -355,15 +348,31 @@ function normalizeQuestion(question, bank, index) {
   const session = (question.session ?? bank.session ?? '').toString().toUpperCase();
   const week = question.week ?? null;
   const responseMode = question.response_mode || 'single_select';
-  const practiceTag = question.practice_tag || (question.type === 'code_based' ? 'coding' : 'conceptual');
-  const varietyTag = question.variety_tag || question.type || 'mcq';
+
+  const rawPractice = String(question.practice_tag || '').toLowerCase();
+  const rawVariety = String(question.variety_tag || question.type || '').toLowerCase();
+
+  const isCodeQuestion = Boolean(
+    question.type === 'code_based' ||
+    question.has_code === true ||
+    question.code_block ||
+    rawPractice === 'coding' ||
+    rawVariety === 'code_based'
+  );
 
   const isActuallyVisual = Boolean(
     question.image_required === true ||
-      question.needs_image === true ||
-      question.type === 'image_based' ||
-      /visual/i.test(String(responseMode))
+    question.needs_image === true ||
+    question.type === 'image_based' ||
+    /visual/i.test(String(responseMode))
   );
+
+  const practiceTag = isCodeQuestion ? 'coding' : (isActuallyVisual ? 'visual' : 'conceptual');
+
+  let varietyTag = question.variety_tag || question.type || 'mcq';
+  if (String(varietyTag).toLowerCase() === 'visual' && !isActuallyVisual) {
+    varietyTag = question.type && question.type !== 'image_based' ? question.type : 'mcq';
+  }
 
   return {
     ...question,
@@ -466,25 +475,6 @@ function hydrateSettings() {
       dom.countSelect.value = String(Math.min(Number(settings.count), APP_CONFIG.maxTestQuestions));
     }
     if (typeof settings.search === 'string' && dom.searchInput) dom.searchInput.value = settings.search;
-    if (typeof settings.hideRemoved === 'boolean' && dom.hideRemovedToggle) {
-      dom.hideRemovedToggle.checked = settings.hideRemoved;
-    }
-    if (typeof settings.hideImagePending === 'boolean' && dom.hideImagePendingToggle) {
-      dom.hideImagePendingToggle.checked = settings.hideImagePending;
-    }
-    if (typeof settings.shuffleQuestions === 'boolean' && dom.shuffleQuestionsToggle) {
-      dom.shuffleQuestionsToggle.checked = settings.shuffleQuestions;
-    }
-    if (typeof settings.shuffleOptions === 'boolean' && dom.shuffleOptionsToggle) {
-      dom.shuffleOptionsToggle.checked = settings.shuffleOptions;
-    }
-    if (typeof settings.showSolutions === 'boolean' && dom.showSolutionsToggle) {
-      dom.showSolutionsToggle.checked = settings.showSolutions;
-    }
-    if (typeof settings.showReference === 'boolean' && dom.showReferenceToggle) {
-      dom.showReferenceToggle.checked = settings.showReference;
-    }
-
     return hasSaved;
   } catch {
     return false;
@@ -506,12 +496,6 @@ function applyDefaultFilters() {
   if (dom.practiceSelect) dom.practiceSelect.value = 'ALL';
   if (dom.countSelect) dom.countSelect.value = '15';
   if (dom.searchInput) dom.searchInput.value = '';
-  if (dom.hideRemovedToggle) dom.hideRemovedToggle.checked = true;
-  if (dom.hideImagePendingToggle) dom.hideImagePendingToggle.checked = true;
-  if (dom.shuffleQuestionsToggle) dom.shuffleQuestionsToggle.checked = true;
-  if (dom.shuffleOptionsToggle) dom.shuffleOptionsToggle.checked = true;
-  if (dom.showSolutionsToggle) dom.showSolutionsToggle.checked = true;
-  if (dom.showReferenceToggle) dom.showReferenceToggle.checked = true;
 }
 
 function saveSettings() {
@@ -527,12 +511,12 @@ function readFilterSettings() {
     practice: dom.practiceSelect?.value || 'ALL',
     count: String(Math.min(Number(dom.countSelect?.value || 15), APP_CONFIG.maxTestQuestions)),
     search: dom.searchInput?.value.trim() || '',
-    hideRemoved: Boolean(dom.hideRemovedToggle?.checked),
-    hideImagePending: Boolean(dom.hideImagePendingToggle?.checked),
-    shuffleQuestions: Boolean(dom.shuffleQuestionsToggle?.checked),
-    shuffleOptions: Boolean(dom.shuffleOptionsToggle?.checked),
-    showSolutions: Boolean(dom.showSolutionsToggle?.checked),
-    showReference: Boolean(dom.showReferenceToggle?.checked)
+    hideRemoved: true,
+    hideImagePending: true,
+    shuffleQuestions: true,
+    shuffleOptions: true,
+    showSolutions: true,
+    showReference: true
   };
 }
 
@@ -544,6 +528,8 @@ function populateFilterOptions() {
 }
 
 function populateSessionOptions() {
+  if (!dom.sessionSelect) return;
+
   const year = dom.yearSelect?.value || 'ALL';
   const sessions = [
     ...new Set(
@@ -553,7 +539,30 @@ function populateSessionOptions() {
     )
   ].sort((a, b) => sessionRank(a) - sessionRank(b));
 
-  populateSelect(dom.sessionSelect, sessions, 'ALL', 'All sessions', formatSession);
+  const current = dom.sessionSelect.value || 'ALL';
+  dom.sessionSelect.innerHTML = '';
+
+  if (sessions.length !== 1) {
+    const allOption = document.createElement('option');
+    allOption.value = 'ALL';
+    allOption.textContent = 'All sessions';
+    dom.sessionSelect.appendChild(allOption);
+  }
+
+  sessions.forEach((session) => {
+    const option = document.createElement('option');
+    option.value = String(session);
+    option.textContent = formatSession(session);
+    dom.sessionSelect.appendChild(option);
+  });
+
+  if (sessions.length === 1) {
+    dom.sessionSelect.value = sessions[0];
+    dom.sessionSelect.disabled = true;
+  } else {
+    dom.sessionSelect.disabled = false;
+    dom.sessionSelect.value = optionValues(dom.sessionSelect).includes(current) ? current : 'ALL';
+  }
 }
 
 function populateWeekOptions() {
@@ -871,7 +880,7 @@ function renderActiveTest() {
 
   if (dom.testTitle) dom.testTitle.textContent = state.activeTest.title;
   if (dom.testMeta) {
-    dom.testMeta.textContent = `${current.year} ${formatSession(current.session)} · ${current.week_label || `Week ${current.week}`} · ${formatType(current.varietyTag)} · ${formatType(current.practiceTag)}`;
+    dom.testMeta.textContent = `${current.year} ${formatSession(current.session)} · ${current.week_label || `Week ${current.week}`} · ${formatType(current.varietyTag)}`;
   }
   if (dom.progressChip) dom.progressChip.textContent = `${state.activeTest.currentIndex + 1} / ${total}`;
   if (dom.answeredCountBadge) dom.answeredCountBadge.textContent = `${answered} answered`;
@@ -893,7 +902,6 @@ function buildQuestionHtml(question) {
   const meta = [
     question.display_no,
     formatType(question.varietyTag),
-    formatType(question.practiceTag),
     `${question.marks || 1} mark`
   ];
 
