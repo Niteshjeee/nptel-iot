@@ -1,6 +1,6 @@
 const APP_CONFIG = {
   noticeText:
-    'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee. Image-based questions stay hidden only when they truly require missing assets in /images.',
+    'Local question files are loaded. If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee. Image-based questions stay hidden only when they truly require missing assets in /images.',
   noticeDurationMs: 5000,
   maxTestQuestions: 50,
   manifestPath: './data/manifest.json',
