@@ -97,12 +97,7 @@ const dom = {
   progressBar: document.getElementById('progressBar'),
   questionCard: document.getElementById('questionCard'),
   questionPalette: document.getElementById('questionPalette'),
-  prevQuestionBtn: document.getElementById('prevQuestionBtn'),
-  nextQuestionBtn: document.getElementById('nextQuestionBtn'),
-  questionSidePrev: document.getElementById('questionSidePrev'),
-  questionSideNext: document.getElementById('questionSideNext'),
   submitTestBtn: document.getElementById('submitTestBtn'),
-  quitTestBtn: document.getElementById('quitTestBtn'),
   resultsPanel: document.getElementById('resultsPanel'),
   resultsEmptyState: document.getElementById('resultsEmptyState'),
   scoreBadge: document.getElementById('scoreBadge'),
@@ -192,10 +187,6 @@ function applyUiFixes() {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
       }
 
-      .test-bottom-bar {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-      }
-
       .actions-row > button,
       .hero-actions > button {
         width: 100%;
@@ -237,12 +228,7 @@ function bindEvents() {
   on(dom.startTestBtn, 'click', startTest);
   on(dom.resumeTestBtn, 'click', () => restoreActiveTest(true));
   on(dom.resetHistoryBtn, 'click', resetHistory);
-  on(dom.prevQuestionBtn, 'click', () => moveQuestion(-1));
-  on(dom.nextQuestionBtn, 'click', () => moveQuestion(1));
-  on(dom.questionSidePrev, 'click', () => moveQuestion(-1));
-  on(dom.questionSideNext, 'click', () => moveQuestion(1));
   on(dom.submitTestBtn, 'click', submitTest);
-  on(dom.quitTestBtn, 'click', quitTest);
   on(dom.reviewRestartBtn, 'click', () => showPage('build'));
   on(dom.openRepoBtn, 'click', () => window.open(APP_CONFIG.repoUrl, '_blank', 'noopener'));
   on(dom.copyIssueTemplateBtn, 'click', copyIssueTemplate);
@@ -282,7 +268,7 @@ function bindEvents() {
 }
 
 function parseDatasetFile(file) {
-  const match = String(file || '').match(/(20\\d{2})_(JAN|JULY)/i);
+  const match = String(file || '').match(/(20\d{2})_(JAN|JULY)/i);
   if (!match) return { year: null, session: null };
   return {
     year: Number(match[1]),
@@ -1257,12 +1243,6 @@ function renderHistory() {
   });
 }
 
-function quitTest() {
-  if (!state.activeTest) return;
-  persistActiveTest();
-  showPage('home');
-}
-
 function openDrawer() {
   dom.sideDrawer?.classList.add('open');
   dom.drawerBackdrop?.classList.remove('hidden');
@@ -1323,7 +1303,7 @@ function copyIssueTemplate() {
     'Problem: ',
     'Expected fix: ',
     `Send to: ${APP_CONFIG.contributionEmail}`
-  ].join('\\n');
+  ].join('\n');
 
   if (navigator.clipboard?.writeText) {
     navigator.clipboard.writeText(template)
@@ -1347,7 +1327,7 @@ function openContributionMail() {
       '',
       'Details:',
       ''
-    ].join('\\n')
+    ].join('\n')
   );
   window.location.href = `mailto:${APP_CONFIG.contributionEmail}?subject=${subject}&body=${body}`;
 }
@@ -1357,7 +1337,7 @@ function copyContactDetails() {
     `Email: ${APP_CONFIG.contributionEmail}`,
     `Social handle: @${APP_CONFIG.socialHandle}`,
     'Requested session uploads: 2018 JAN / 2019 JULY'
-  ].join('\\n');
+  ].join('\n');
 
   if (navigator.clipboard?.writeText) {
     navigator.clipboard.writeText(text)
@@ -1411,7 +1391,7 @@ function formatType(value) {
   };
 
   if (map[raw]) return map[raw];
-  return raw.replaceAll('_', ' ').replace(/\\b\\w/g, (char) => char.toUpperCase());
+  return raw.replaceAll('_', ' ').replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 function formatDate(iso) {
@@ -1425,7 +1405,7 @@ function formatDate(iso) {
 function normalizeText(text) {
   return String(text || '')
     .toLowerCase()
-    .replace(/\\s+/g, ' ')
+    .replace(/\s+/g, ' ')
     .trim();
 }
 
