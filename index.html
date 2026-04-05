@@ -88,8 +88,7 @@
           <div class="eyebrow">Normalized practice bank</div>
           <h2>NPTEL IoT practice hub</h2>
           <p class="hero-copy">
-            Session-based practice with cleaner navigation, smaller mobile-friendly layout, and only real
-            image-required questions hidden.
+            Session-based practice with cleaner navigation, advanced edge-to-edge mobile layout, and real-time result tracking.
           </p>
         </div>
 
@@ -152,7 +151,7 @@
           <div class="section-head">
             <div>
               <h3>Loaded sessions</h3>
-              <p class="muted">Only sessions available in your current files are shown.</p>
+              <p class="muted">All sessions currently loaded from your data folder.</p>
             </div>
           </div>
 
@@ -279,9 +278,10 @@
     </section>
 
     <section class="app-page" id="page-test" data-page="test">
-      <div class="page-card hidden" id="testPanel">
-        <div class="section-head between wrap-gap">
-          <div>
+      <div class="test-panel-wrapper hidden" id="testPanel">
+        
+        <div class="test-header between wrap-gap">
+          <div class="test-header-left">
             <h2 id="testTitle">Practice test</h2>
             <p class="muted" id="testMeta"></p>
           </div>
@@ -292,12 +292,12 @@
           </div>
         </div>
 
-        <div class="progress-bar-shell">
+        <div class="progress-bar-shell thin">
           <div class="progress-bar" id="progressBar"></div>
         </div>
 
-        <div class="question-wrap">
-          <article class="question-card" id="questionCard"></article>
+        <div class="question-wrap edge-to-edge">
+          <article class="question-card clean-card" id="questionCard"></article>
           
           <div class="swipe-indicator">
             <span class="red-arrow left">‹</span>
@@ -306,15 +306,15 @@
           </div>
         </div>
 
-        <div class="palette-wrap">
+        <div class="palette-wrap slim">
           <div class="section-head between">
-            <h3>Question navigator</h3>
-            <span class="badge subtle">Tap any number</span>
+            <h3>Navigator</h3>
+            <span class="badge subtle">Tap to jump</span>
           </div>
           <div class="question-palette" id="questionPalette"></div>
         </div>
 
-        <div class="test-bottom-bar single-button">
+        <div class="test-bottom-bar single-button fixed-bottom">
           <button class="primary-btn" id="submitTestBtn" type="button">Submit Test</button>
         </div>
       </div>
