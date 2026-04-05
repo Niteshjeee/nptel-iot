@@ -772,29 +772,43 @@ select:focus {
   border: 1px solid #f2dda0;
 }
 
-.question-side-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid var(--border-strong);
-  background: rgba(255, 255, 255, 0.94);
-  color: var(--accent);
-  font-size: 1.55rem;
-  font-weight: 700;
-  box-shadow: 0 10px 22px rgba(33, 87, 200, 0.12);
-  cursor: pointer;
-  z-index: 2;
+/* --- NEW SWIPE INDICATOR STYLES --- */
+.swipe-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.question-side-btn.left {
-  left: -8px;
+.swipe-indicator .red-arrow {
+  color: var(--danger);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
-.question-side-btn.right {
-  right: -8px;
+.swipe-indicator .red-arrow.left {
+  animation: bounceLeft 1.5s infinite ease-in-out;
+}
+
+.swipe-indicator .red-arrow.right {
+  animation: bounceRight 1.5s infinite ease-in-out;
+}
+
+@keyframes bounceLeft {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-6px); }
+}
+
+@keyframes bounceRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
 }
 
 .palette-wrap {
@@ -843,14 +857,17 @@ select:focus {
   bottom: calc(72px + var(--safe-bottom));
   z-index: 8;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px;
   margin-top: 16px;
-  padding: 9px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border);
   backdrop-filter: blur(16px);
+}
+
+.test-bottom-bar.single-button {
+  grid-template-columns: 1fr;
+  padding: 12px;
 }
 
 .results-summary {
@@ -1018,14 +1035,6 @@ select:focus {
 
   .quick-grid {
     grid-template-columns: 1fr;
-  }
-
-  .question-side-btn {
-    display: none;
-  }
-
-  .test-bottom-bar {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .contact-line {
