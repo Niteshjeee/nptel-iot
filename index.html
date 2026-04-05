@@ -297,25 +297,13 @@
         </div>
 
         <div class="question-wrap">
-          <button
-            class="question-side-btn left"
-            id="questionSidePrev"
-            type="button"
-            aria-label="Previous question"
-          >
-            ‹
-          </button>
-
           <article class="question-card" id="questionCard"></article>
-
-          <button
-            class="question-side-btn right"
-            id="questionSideNext"
-            type="button"
-            aria-label="Next question"
-          >
-            ›
-          </button>
+          
+          <div class="swipe-indicator">
+            <span class="red-arrow left">‹</span>
+            <span>Swipe to navigate</span>
+            <span class="red-arrow right">›</span>
+          </div>
         </div>
 
         <div class="palette-wrap">
@@ -326,11 +314,8 @@
           <div class="question-palette" id="questionPalette"></div>
         </div>
 
-        <div class="test-bottom-bar">
-          <button class="secondary-btn" id="prevQuestionBtn" type="button">Previous</button>
-          <button class="ghost-btn" id="quitTestBtn" type="button">Save & close</button>
-          <button class="secondary-btn" id="nextQuestionBtn" type="button">Next</button>
-          <button class="primary-btn" id="submitTestBtn" type="button">Submit</button>
+        <div class="test-bottom-bar single-button">
+          <button class="primary-btn" id="submitTestBtn" type="button">Submit Test</button>
         </div>
       </div>
 
