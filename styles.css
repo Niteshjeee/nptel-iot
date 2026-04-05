@@ -207,7 +207,7 @@ code {
 .palette-btn.current { background: var(--accent); border-color: var(--accent); color: white; }
 
 .test-bottom-bar.fixed-bottom { position: sticky; bottom: calc(72px + var(--safe-bottom)); z-index: 8; margin-top: 10px; }
-.test-bottom-bar.single-button { grid-template-columns: 1fr; padding: 12px; }
+.test-bottom-bar.two-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 10px; }
 
 /* Results & History */
 .results-summary { display: grid; gap: 10px; margin-bottom: 14px; }
