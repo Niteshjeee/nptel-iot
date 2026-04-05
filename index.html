@@ -125,40 +125,38 @@
         </article>
       </div>
 
-      <div class="split-grid">
-        <section class="page-card">
-          <div class="section-head between">
-            <div>
-              <h3>Quick presets</h3>
-              <p class="muted">Start with the most useful mixes.</p>
-            </div>
-            <span class="badge subtle" id="datasetBadge">Loading…</span>
+      <section class="page-card">
+        <div class="section-head between">
+          <div>
+            <h3>Quick presets</h3>
+            <p class="muted">Start with the most useful mixes.</p>
           </div>
+          <span class="badge subtle" id="datasetBadge">Loading…</span>
+        </div>
 
-          <div class="quick-grid">
-            <button class="secondary-btn" data-quick="latest-jan" type="button">Latest JAN</button>
-            <button class="secondary-btn" data-quick="latest-july" type="button">Latest JULY</button>
-            <button class="secondary-btn" data-quick="mixed-2025" type="button">Mixed 2025</button>
-            <button class="secondary-btn" data-quick="all-years" type="button">All years</button>
-            <button class="secondary-btn" data-quick="code" type="button">Coding only</button>
-            <button class="secondary-btn" data-quick="tf" type="button">True / False</button>
+        <div class="quick-grid">
+          <button class="secondary-btn" data-quick="latest-jan" type="button">Latest JAN</button>
+          <button class="secondary-btn" data-quick="latest-july" type="button">Latest JULY</button>
+          <button class="secondary-btn" data-quick="mixed-2025" type="button">Mixed 2025</button>
+          <button class="secondary-btn" data-quick="all-years" type="button">All years</button>
+          <button class="secondary-btn" data-quick="code" type="button">Coding only</button>
+          <button class="secondary-btn" data-quick="tf" type="button">True / False</button>
+        </div>
+
+        <div class="builder-status compact" id="homeSummaryText"></div>
+
+        <hr class="card-divider" />
+
+        <div class="section-head">
+          <div>
+            <h3>Loaded sessions</h3>
+            <p class="muted">All sessions currently loaded from your data folder.</p>
           </div>
+        </div>
 
-          <div class="builder-status compact" id="homeSummaryText"></div>
-        </section>
-
-        <section class="page-card">
-          <div class="section-head">
-            <div>
-              <h3>Loaded sessions</h3>
-              <p class="muted">All sessions currently loaded from your data folder.</p>
-            </div>
-          </div>
-
-          <div class="dataset-grid compact" id="homeDatasetsGrid"></div>
-        </section>
-      </div>
-    </section>
+        <div class="dataset-grid compact" id="homeDatasetsGrid"></div>
+      </section>
+      </section>
 
     <section class="app-page" id="page-build" data-page="build">
       <div class="page-card">
