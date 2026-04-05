@@ -993,7 +993,6 @@ function buildQuestionHtml(question) {
     <div class="question-meta">
       ${meta.map((item) => `<span class="meta-chip">${escapeHtml(item)}</span>`).join('')}
     </div>
-    <h3>${escapeHtml(question.uid || question.id)}</h3>
     <div class="question-text">${escapeHtml(question.question || 'Untitled question')}</div>
     ${question.code_block ? `<pre class="code-block"><code>${escapeHtml(question.code_block)}</code></pre>` : ''}
     ${imageBlock}
