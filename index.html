@@ -276,46 +276,44 @@
     </section>
 
     <section class="app-page" id="page-test" data-page="test">
-      <div class="test-panel-wrapper hidden" id="testPanel">
+      <div class="page-card unified-test-card hidden" id="testPanel">
         
-        <div class="test-header between wrap-gap">
-          <div class="test-header-left">
-            <h2 id="testTitle">Practice test</h2>
-            <p class="muted" id="testMeta"></p>
+        <div class="between wrap-gap">
+          <div>
+            <h2 id="testTitle" style="margin:0 0 4px; font-size:1.1rem;">Practice test</h2>
+            <p class="muted" id="testMeta" style="margin:0; font-size:0.85rem;"></p>
           </div>
-
-          <div class="test-top-actions">
+          <div style="display:flex; gap:8px;">
             <span class="badge" id="progressChip">0 / 0</span>
             <span class="badge subtle" id="answeredCountBadge">0 answered</span>
           </div>
         </div>
 
-        <div class="progress-bar-shell thin">
+        <div class="progress-bar-shell thin" style="margin: 16px 0;">
           <div class="progress-bar" id="progressBar"></div>
         </div>
 
-        <div class="question-wrap edge-to-edge">
-          <article class="question-card clean-card" id="questionCard"></article>
-          
-          <div class="swipe-indicator">
-            <span class="red-arrow left">‹</span>
-            <span>Swipe to navigate</span>
-            <span class="red-arrow right">›</span>
-          </div>
+        <article id="questionCard" style="min-height: 250px;"></article>
+        
+        <div class="swipe-indicator">
+          <span class="red-arrow left">‹</span>
+          <span>Swipe to navigate</span>
+          <span class="red-arrow right">›</span>
         </div>
 
-        <div class="palette-wrap slim">
-          <div class="section-head between">
-            <h3>Navigator</h3>
-            <span class="badge subtle">Tap to jump</span>
-          </div>
-          <div class="question-palette" id="questionPalette"></div>
-        </div>
+        <hr class="card-divider" />
 
-        <div class="test-bottom-bar two-buttons fixed-bottom">
+        <div class="between" style="margin-bottom: 12px;">
+          <h3 style="margin:0; font-size:1rem;">Navigator</h3>
+          <span class="badge subtle">Tap to jump</span>
+        </div>
+        <div class="question-palette" id="questionPalette"></div>
+
+        <div class="test-bottom-actions">
           <button class="ghost-btn" id="quitTestBtn" type="button">Save & Close</button>
           <button class="primary-btn" id="submitTestBtn" type="button">Submit Test</button>
         </div>
+
       </div>
 
       <div class="page-card empty-state" id="testEmptyState">
