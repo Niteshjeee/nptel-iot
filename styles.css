@@ -51,24 +51,39 @@ a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 button { -webkit-tap-highlight-color: transparent; }
 
-/* Critical code block fix to stop it breaking layout width */
+/* Global Inline Code */
+code { 
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; 
+  background: var(--panel-soft); 
+  color: var(--text); /* Forces text to match the theme */
+  padding: 0.12rem 0.32rem; 
+  border-radius: 8px; 
+}
+
+/* ================= THE CODE BLOCK FIX ================= */
 .code-block { 
   margin: 12px 0 16px; 
-  padding: 13px; 
+  padding: 16px; 
   border-radius: 14px; 
-  background: #0f2345; 
-  color: #e7f0ff; 
-  border: 1px solid #1b3766; 
+  background: #0f172a; /* Deep dark background for both modes */
+  color: #e2e8f0; /* Crisp light text */
+  border: 1px solid #1e293b; 
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.84rem; 
-  line-height: 1.5; 
+  font-size: 0.85rem; 
+  line-height: 1.6; 
   max-width: 100%;
   overflow-x: hidden; 
-  white-space: pre-wrap; /* Forces lines to wrap instead of scroll horizontally */
-  word-wrap: break-word; /* Breaks super long unbreakable text like links */
+  white-space: pre-wrap; /* Forces code to wrap to next line! */
+  word-wrap: break-word; 
   word-break: break-word;
 }
-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--panel-soft); padding: 0.12rem 0.32rem; border-radius: 8px; }
+/* Stops the inner code tag from ruining the dark background in light mode */
+.code-block code { 
+  background: transparent !important; 
+  color: inherit !important; 
+  padding: 0; 
+  border: none; 
+}
 
 .hidden { display: none !important; }
 .muted { color: var(--muted); }
@@ -168,16 +183,16 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; ba
 
 .unified-test-card {
   display: flex; flex-direction: column;
-  width: 100%; max-width: 100%; /* Prevents code from stretching */
+  width: 100%; max-width: 100%; 
   overflow-x: hidden;
 }
 
 .question-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
 .meta-chip { padding: 6px 10px; border-radius: 999px; background: var(--panel-soft); color: var(--muted); font-size: 0.72rem; font-weight: 700; border: 1px solid var(--border); }
-.question-text { font-size: 0.98rem; line-height: 1.6; margin-bottom: 14px; color: var(--text); }
+.question-text { font-size: 1rem; line-height: 1.6; margin-bottom: 14px; color: var(--text); }
 
 .options-list { display: grid; gap: 8px; }
-.option-btn { width: 100%; text-align: left; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--border-strong); background: var(--panel-soft); color: var(--text); cursor: pointer; font-size: 0.92rem; line-height: 1.4;}
+.option-btn { width: 100%; text-align: left; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--border-strong); background: var(--panel-soft); color: var(--text); cursor: pointer; font-size: 0.95rem; line-height: 1.45;}
 .option-btn:hover { background: var(--border); }
 .option-btn.selected { border-color: var(--accent); background: var(--accent-soft); }
 .option-btn.correct { border-color: #22c55e; background: rgba(34, 197, 94, 0.15); }
@@ -230,15 +245,18 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; ba
 }
 [data-theme="dark"] .dataset-card { background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%); }
 
+
 /* --- RESPONSIVE BREAKPOINTS --- */
 
 @media (max-width: 719px) {
   .profile-chip { min-width: unset; padding: 6px; }
   .quick-grid { grid-template-columns: 1fr; }
   .contact-line { flex-direction: column; gap: 4px; }
-  .option-btn { padding: 10px 12px; }
+  .option-btn { padding: 12px; }
 
-  /* THE EDGE-TO-EDGE MAGIC FOR THE TEST CARD */
+  /* =======================================================
+     THE EDGE-TO-EDGE SPACING FIX 
+     ======================================================= */
   .unified-test-card {
     margin-left: -14px;
     margin-right: -14px;
@@ -246,7 +264,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; ba
     border-left: none;
     border-right: none;
     box-shadow: none;
-    padding: 18px 14px;
+    padding: 24px 20px; /* INCREASED PADDING! Text will no longer hit the left edge */
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
