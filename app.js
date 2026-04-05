@@ -10,7 +10,8 @@ const APP_CONFIG = {
     profile: 'nptel_iot_profile_v7',
     history: 'nptel_iot_history_v7',
     settings: 'nptel_iot_settings_v7',
-    activeTest: 'nptel_iot_active_test_v7'
+    activeTest: 'nptel_iot_active_test_v7',
+    theme: 'nptel_iot_theme_v7'
   }
 };
 
@@ -47,6 +48,7 @@ const dom = {
   noticeBar: document.getElementById('noticeBar'),
   noticeText: document.getElementById('noticeText'),
   menuToggle: document.getElementById('menuToggle'),
+  themeToggleBtn: document.getElementById('themeToggleBtn'),
   sideDrawer: document.getElementById('sideDrawer'),
   drawerBackdrop: document.getElementById('drawerBackdrop'),
   closeDrawerBtn: document.getElementById('closeDrawerBtn'),
@@ -123,6 +125,7 @@ init().catch((error) => {
 
 async function init() {
   applyUiFixes();
+  initTheme(); // Load Dark Mode preference
 
   if (dom.noticeText) dom.noticeText.textContent = APP_CONFIG.noticeText;
   bindEvents();
@@ -145,6 +148,29 @@ async function init() {
   renderResultsFromLastAttempt();
   restoreActiveTest(false);
   showPage('home');
+}
+
+function initTheme() {
+  const saved = localStorage.getItem(APP_CONFIG.storage.theme);
+  const isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  if (isDark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  updateThemeIcon();
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const newTheme = isDark ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem(APP_CONFIG.storage.theme, newTheme);
+  updateThemeIcon();
+}
+
+function updateThemeIcon() {
+  if (!dom.themeToggleBtn) return;
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  dom.themeToggleBtn.textContent = isDark ? '☀️' : '🌙';
 }
 
 function applyUiFixes() {
@@ -213,6 +239,7 @@ function scheduleNoticeDismiss() {
 
 function bindEvents() {
   on(dom.menuToggle, 'click', openDrawer);
+  on(dom.themeToggleBtn, 'click', toggleTheme);
   on(dom.closeDrawerBtn, 'click', closeDrawer);
   on(dom.drawerBackdrop, 'click', closeDrawer);
   on(dom.quickHomeBuildBtn, 'click', () => showPage('build'));
