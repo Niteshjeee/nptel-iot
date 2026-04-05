@@ -55,7 +55,7 @@ button { -webkit-tap-highlight-color: transparent; }
 code { 
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; 
   background: var(--panel-soft); 
-  color: var(--text); /* Forces text to match the theme */
+  color: var(--text); 
   padding: 0.12rem 0.32rem; 
   border-radius: 8px; 
 }
@@ -65,8 +65,8 @@ code {
   margin: 12px 0 16px; 
   padding: 16px; 
   border-radius: 14px; 
-  background: #0f172a; /* Deep dark background for both modes */
-  color: #e2e8f0; /* Crisp light text */
+  background-color: #0f172a !important; /* Deep dark background for both modes */
+  color: #ffffff !important; /* Force pure white text */
   border: 1px solid #1e293b; 
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.85rem; 
@@ -77,10 +77,11 @@ code {
   word-wrap: break-word; 
   word-break: break-word;
 }
+
 /* Stops the inner code tag from ruining the dark background in light mode */
 .code-block code { 
-  background: transparent !important; 
-  color: inherit !important; 
+  background-color: transparent !important; 
+  color: #ffffff !important; /* OVERRIDE light mode text color */
   padding: 0; 
   border: none; 
 }
@@ -178,7 +179,7 @@ code {
 .progress-bar { width: 0; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width 0.18s ease; }
 
 /* --------------------------------------------------------------------------
-   THE 100% UNIFIED, SINGLE-BOX TEST INTERFACE 
+   THE UNIFIED TEST INTERFACE
    -------------------------------------------------------------------------- */
 
 .unified-test-card {
@@ -254,19 +255,12 @@ code {
   .contact-line { flex-direction: column; gap: 4px; }
   .option-btn { padding: 12px; }
 
-  /* =======================================================
-     THE EDGE-TO-EDGE SPACING FIX 
-     ======================================================= */
+  /* ==========================================================
+     REMOVED THE NEGATIVE MARGIN HACK.
+     Now the Test Card perfectly aligns with the other cards!
+     ========================================================== */
   .unified-test-card {
-    margin-left: -14px;
-    margin-right: -14px;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    box-shadow: none;
-    padding: 24px 20px; /* INCREASED PADDING! Text will no longer hit the left edge */
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    padding: 20px 16px; 
   }
 }
 
