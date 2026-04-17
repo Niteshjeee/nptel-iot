@@ -1,7 +1,7 @@
 const APP_CONFIG = {
   noticeText: 'If you have NPTEL IoT 2018 JAN or 2019 JULY questions, send them to nkcbanka@gmail.com or contact @niteshjeee',
   noticeDurationMs: 5000,
-  maxTestQuestions: 50,
+  maxTestQuestions: 200,
   manifestPath: './data/manifest.json',
   repoUrl: 'https://github.com/Niteshjeee/nptel-iot',
   contributionEmail: 'nkcbanka@gmail.com',
