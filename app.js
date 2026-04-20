@@ -579,7 +579,7 @@ function readFilterSettings() {
     hideRemoved: true,
     hideImagePending: true,
     shuffleQuestions: true,
-    shuffleOptions: true,
+    shuffleOptions: false,
     showSolutions: true,
     showReference: true
   };
